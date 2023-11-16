@@ -83,15 +83,15 @@ const iconData = [
 
 const swiperData = [
   {
-    bgimg: "https://via.placeholder.com/1920x1080",
+    bgimg: "/assets/img/webp/heroimg7.png",
     img: "/assets/img/webp/slider-typography-01.webp"
   },
   {
-    bgimg: "https://via.placeholder.com/1920x1080",
+    bgimg: "/assets/img/webp/Heroimg11.jpg",
     img: "/assets/img/webp/slider-typography-02.webp"
   },
   {
-    bgimg: "https://via.placeholder.com/1920x1080",
+    bgimg: "/assets/img/webp/Heroimg4.png",
     img: "/assets/img/webp/slider-typography-03.webp"
   }
 ]
