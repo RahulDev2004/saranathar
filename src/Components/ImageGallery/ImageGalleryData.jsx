@@ -59,7 +59,7 @@ const imageGalleryData03 = [
         src: "https://via.placeholder.com/800x1200",
         title: "Lightbox gallery image title",
     },
-   
+
     {
         src: "https://via.placeholder.com/800x1200",
         title: "Lightbox gallery image title",
@@ -74,5 +74,25 @@ const imageGalleryData03 = [
     }
 ]
 
+const imageGalleryDataServices = [
+    {
+        double_col: true,
+        src: "/images/works/img1-800x794.jpg",
+        title: "Lightbox gallery image title",
+    },
+    {
+        double_col: true,
+        src: "/images/works/img5-800x387.jpg",
+        title: "Lightbox gallery image title",
+    },
+    {
+        src: "/images/works/img2-800x794.jpg",
+        title: "Lightbox gallery image title",
+    },
+    {
+        src: "/images/works/img3-800x794.jpg",
+        title: "Lightbox gallery image title",
+    }
+]
 
-export { imageGalleryData01, imageGalleryData02, imageGalleryData03 }
+export { imageGalleryData01, imageGalleryData02, imageGalleryData03, imageGalleryDataServices }

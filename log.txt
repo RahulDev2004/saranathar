@@ -1,0 +1,14 @@
+themeColor={["#FFBA18", "#FFDC00"]}
+hover:text-[#FFBA18]
+
+
+sections of about page
+
+Introduction
+History
+Achievements
+Testimonials
+CTA
+
+#595767
+#38364A

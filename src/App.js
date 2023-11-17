@@ -283,6 +283,11 @@ const BlogAudioPostPage = lazy(() => import("./Pages/Blogs/PostTypes/BlogAudioPo
 const BlogBlockquotePostPage = lazy(() => import("./Pages/Blogs/PostTypes/BlogBlockquotePostPage"))
 const BlogFullWidthPost = lazy(() => import("./Pages/Blogs/PostTypes/BlogFullWidthPost"))
 
+// Test Pages
+const Services = lazy(() => import("./Pages/test/services"))
+const About = lazy(() => import("./Pages/test/about"))
+const Contact = lazy(() => import("./Pages/test/contact"))
+
 function App() {
   const [headerHeight, setHeaderHeight] = useState(0);
   const [footerHeight, setFooterHeight] = useState(0);
@@ -353,6 +358,12 @@ function App() {
               <Suspense fallback={<></>}>
                 <Routes>
                   <Route path="/" element={<LandingPage />} />
+
+                  <Route path="test">
+                    <Route path="services" element={<Services />} />
+                    <Route path="about" element={<About />} />
+                    <Route path="contact" element={<Contact />} />
+                  </Route>
 
                   {/* Headers */}
                   <Route path="headers">
@@ -651,6 +662,8 @@ function App() {
                     <Route path="checkout" element={<Checkout />} />
                     <Route path="login-register" element={<LoginRegister />} />
                   </Route>
+
+
                 </Routes>
               </Suspense>
             </AnimatePresence>
