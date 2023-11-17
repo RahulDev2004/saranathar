@@ -48,6 +48,7 @@ const FashionShopPage = lazy(() => import("./Pages/Home/FashionShop"))
 const LifestyleBlogPage = lazy(() => import("./Pages/Home/LifestyleBlog"))
 const ClassicBlogPage = lazy(() => import("./Pages/Home/ClassicBlog"))
 const MagazinePage = lazy(() => import("./Pages/Home/Magazine"))
+const Gallery = lazy(() => import("./Pages/Services/WhatWeOfferPage"))
 
 // Pages
 const LandingPage = lazy(() => import("./Pages/Landing"))
@@ -346,7 +347,7 @@ function App() {
       }}
     >
       <div className="App" style={{ "--header-height": `${headerHeight}px` }}>
-        <HotelResortPage />
+        <WhatWeOfferPage/>
       </div>
     </GlobalContext.Provider>
   )
