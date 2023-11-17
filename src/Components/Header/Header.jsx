@@ -18,7 +18,7 @@ import ReactCustomScrollbar from "../ReactCustomScrollbar";
 import GlobalContext from "../../Context/Context";
 
 // Data
-import HeaderData from "./HeaderData";
+import HeaderData from "./HeaderDataNew";
 
 // css
 import "../../Assets/scss/layouts/_header.scss"

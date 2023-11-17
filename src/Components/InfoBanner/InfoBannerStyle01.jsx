@@ -18,11 +18,11 @@ const InfoBannerStyle01 = (props) => {
                         <m.div key={i} className="col" {...{ ...props.animation, transition: { delay: i * props.animationDelay } }}>
                             <Link aria-label="link" to={item.btnLink}><img className="w-full" width={360} height={279} src={item.img} alt="feature specials" /></Link>
                             <div className="relative bg-white box-shadow-small p-14">
-                                <div className="bg-[#333045] text-small font-serif text-white uppercase absolute font-medium text-sm -top-[15px] right-0 py-[5px] px-[20px]">{item.price}</div>
+                                {/* <div className="bg-[#333045] text-small font-serif text-white uppercase absolute font-medium text-sm -top-[15px] right-0 py-[5px] px-[20px]">{item.price}</div> */}
                                 <span className="font-serif font-medium text-xmd text-darkgray block mb-[10px]">{item.title}</span>
-                                <p className="mb-[25px]">{item.content}</p>
-                                <div className="w-full h-[1px] bg-[#ededed] mb-[20px] inline-block"></div>
-                                <Link aria-label="link" className="font-serif font-semibold text-sm text-[#333045] hover:text-basecolor uppercase flex items-center" to={item.btnLink}>{item.btnName}<i className="feather-arrow-right text-lg ms-auto"></i></Link>
+                                <p className="mb-[0px]">{item.content}</p>
+                                {/* <div className="w-full h-[1px] bg-[#ededed] mb-[20px] inline-block"></div>
+                                <Link aria-label="link" className="font-serif font-semibold text-sm text-[#333045] hover:text-basecolor uppercase flex items-center" to={item.btnLink}>{item.btnName}<i className="feather-arrow-right text-lg ms-auto"></i></Link> */}
                             </div>
                         </m.div>
                     )

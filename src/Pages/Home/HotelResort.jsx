@@ -83,22 +83,22 @@ const iconData = [
 
 const swiperData = [
   {
-    bgimg: "https://via.placeholder.com/1920x1080",
+    bgimg: "/assets/img/webp/heroimg7.png",
     img: "/assets/img/webp/slider-typography-01.webp"
   },
   {
-    bgimg: "https://via.placeholder.com/1920x1080",
+    bgimg: "/assets/img/webp/Heroimg11.jpg",
     img: "/assets/img/webp/slider-typography-02.webp"
   },
   {
-    bgimg: "https://via.placeholder.com/1920x1080",
+    bgimg: "/assets/img/webp/Heroimg4.png",
     img: "/assets/img/webp/slider-typography-03.webp"
   }
 ]
 
 const infoData = [
   {
-    img: "https://via.placeholder.com/600x465",
+    img: "/assets/img/gallery/img221.png",
     title: "Classic double toom",
     content: "Lorem ipsum dolor amet consectetur adipiscing do eiusmod tempor",
     price: "FROM $100 PER NIGHT",
@@ -106,7 +106,7 @@ const infoData = [
     btnLink: "#"
   },
   {
-    img: "https://via.placeholder.com/600x465",
+    img: "/assets/img/gallery/img15.png",
     title: "One bedroom suite",
     content: "Lorem ipsum dolor amet consectetur adipiscing do eiusmod tempor",
     price: "FROM $150 PER NIGHT",
@@ -114,7 +114,7 @@ const infoData = [
     btnLink: "#"
   },
   {
-    img: "https://via.placeholder.com/600x465",
+    img: "/assets/img/gallery/img5.png",
     title: "Empire state suite",
     content: "Lorem ipsum dolor amet consectetur adipiscing do eiusmod tempor",
     price: "FROM $200 PER NIGHT",
@@ -290,12 +290,12 @@ const HotelResortPage = (props) => {
       <section className="py-0 overflow-hidden">
         <Container fluid>
           <Row>
-            <m.div className="col-xs-12 col-xl-6 col-lg-5 cover-background pl-40 h-[650px] flex flex-col justify-center xl:pl-[15px] lg:h-[550px] md:h-[350px] xs:h-[300px]" style={{ backgroundImage: `url(https://via.placeholder.com/1100x745)` }} {...fadeIn}>
+            <m.div className="col-xs-12 col-xl-6 col-lg-5 cover-background pl-40 h-[650px] flex flex-col justify-center xl:pl-[15px] lg:h-[550px] md:h-[350px] xs:h-[300px]" style={{ backgroundImage: `url(/assets/img/webp/homeslider7.jpg)` }} {...fadeIn}>
               <Row className="justify-center">
                 <Col xl={5} sm={9} className="xs:text-center">
                   <i className="line-icon-Slippers text-[50px] mb-[35px] inline-block xs:mb-[25px]"></i>
                   <span className="font-serif font-semibold text-md text-[#c89965] block uppercase mb-[25px] tracking-[1px] xs:mb-[15px]">Why choose resort</span>
-                  <h2 className="heading-4 font-serif font-medium text-white mb-0 xs:w-[70%] mx-auto">Five reasons to stay with us</h2>
+                  <h2 className="heading-4 font-serif font-medium text-black mb-0 xs:w-[70%] mx-auto">Five reasons to stay with us</h2>
                 </Col>
               </Row>
             </m.div>
@@ -308,7 +308,7 @@ const HotelResortPage = (props) => {
                 ref={swiperRef1Fivereasons}
                 modules={[Autoplay, Keyboard]}
                 keyboard={{ enabled: true, onlyInViewport: true }} >
-                <SwiperSlide className="overflow-hidden cover-background relative" style={{ backgroundImage: `url(https://via.placeholder.com/1100x745)` }}>
+                <SwiperSlide className="overflow-hidden cover-background relative" style={{ backgroundImage: `url(/assets/img/webp/homeslider1.png)` }}>
                   <div className="flex flex-col justify-end h-full" >
                     <div className="bg-white pl-24 pr-20 py-[4.5rem] w-[55%] lg:w-[75%] lg:py-[3.5rem] lg:px-16 md:w-[60%] sm:w-[75%] xs:w-[80%]">
                       <h3 className="heading-6 font-serif font-medium text-[#333045] mb-[15px]">Exclusive restaurants</h3>
@@ -316,7 +316,7 @@ const HotelResortPage = (props) => {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="overflow-hidden cover-background relative" style={{ backgroundImage: `url(https://via.placeholder.com/1100x745)` }}>
+                <SwiperSlide className="overflow-hidden cover-background relative" style={{ backgroundImage: `url(/assets/img/webp/homeslider7.png)` }}>
                   <div className="flex flex-col justify-end h-full" >
                     <div className="bg-white px-24 py-[4.5rem] w-[55%] lg:w-[75%] lg:py-[3.5rem] lg:px-16 md:w-[60%] sm:w-[75%] xs:w-[80%]">
                       <h3 className="heading-6 font-serif font-medium text-[#333045] mb-[15px]">Large swimming pool</h3>
@@ -324,7 +324,7 @@ const HotelResortPage = (props) => {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="overflow-hidden cover-background relative" style={{ backgroundImage: `url(https://via.placeholder.com/1100x745)` }}>
+                <SwiperSlide className="overflow-hidden cover-background relative" style={{ backgroundImage: `url(/assets/img/webp/homeslider.png)` }}>
                   <div className="flex flex-col justify-end h-full" >
                     <div className="bg-white px-24 py-[4.5rem] w-[55%] lg:w-[75%] lg:py-[3.5rem] lg:px-16 md:w-[60%] sm:w-[75%] xs:w-[80%]">
                       <h3 className="heading-6 font-serif font-medium text-[#333045] mb-[15px]">Luxury spa massage</h3>
@@ -367,11 +367,11 @@ const HotelResortPage = (props) => {
             <Col lg={7} md={8} xl={6} className="text-center mb-36 lg:mb-[7.5rem]">
               <span className="font-serif font-semibold text-[#c89965] uppercase text-md tracking-[1px] mb-[25px] block">A holiday to Remember, Limited rooms available!</span>
               <h2 className="heading-5 font-serif font-medium text-[#333045] -tracking-[1px] w-[95%] inline-block mb-[45px] xs:w-full">We offers the perfect setting for rare moments of romance</h2>
-              <Buttons aria-label="link for holiday" href="#" className="btn-fill font-medium font-serif rounded-none uppercase" themeColor="#333045" color="#fff" size="md" title="booking now" />
+              <Buttons aria-label="link for holiday" href="#" className="btn-fill font-medium font-serif rounded-none uppercase" themeColor="#333045" color="#fff" size="md" title="View Gallery" />
             </Col>
           </m.div>
         </Container>
-        <div className="border-t border-[#0000001a] hotelresort-client">
+        {/* <div className="border-t border-[#0000001a] hotelresort-client">
           <Container>
             <Clients
               grid="row row-cols-1 row-cols-md-4 row-cols-sm-2"
@@ -381,12 +381,12 @@ const HotelResortPage = (props) => {
               animationDelay={0.3}
             />
           </Container>
-        </div>
+        </div> */}
       </section>
       {/* Section End */}
 
       {/* Feature Section Start */}
-      <section className="bg-[#f8f2eb] py-[130px] lg:py-[90px] md:py-[75px] sm:py-[50px]">
+      <section className="bg-[#f8f2eb] pt-[100px] pb-[130px] lg:py-[90px] md:py-[75px] sm:py-[50px]">
         <Container>
           <Row className="justify-center">
             <Col md={6} lg={5} className="text-center mb-16 md:mb-12">

@@ -25,43 +25,34 @@ import SideButtons from "../../Components/SideButtons";
 import { CounterData01 } from '../../Components/Counters/CounterData';
 import { ListData01 } from '../../Components/Lists/ListsData';
 import { PiechartData1 } from '../../Components/PieChart/PieChartData'
-import { TeamData02 } from '../../Components/Team/TeamData';
+import { TeamData02, TeamData01 } from '../../Components/Team/TeamData';
 
 const IconWithText = lazy(() => import('../../Components/IconWithText/IconWithText'))
 
 const TabData = [
   {
-    tabTitle: '01. PLANNING',
-    subtitle: 'Unlimited power customization',
-    title: 'We offer a full range of digital marketing services',
-    img: 'https://via.placeholder.com/800x717',
+    tabTitle: '01. STATUE WORK',
+    subtitle: ' Unlimited power customization',
+    title: 'We created digital ideas that are bigger and bolder',
+    img: '/assets/img/gallery/statuework.png',
     content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna ut enim ad minim veniam nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     buttonTitle: "Discover Litho",
     buttonLink: "#"
   },
   {
-    tabTitle: '02. RESEARCH',
+    tabTitle: '02. GOLD WORK',
     subtitle: 'Powerful theme for creative designer',
     title: 'We are expert in search engine and social media',
-    img: 'https://via.placeholder.com/800x717',
+    img: '/assets/img/gallery/goldwork.png',
     content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna ut enim ad minim veniam nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     buttonTitle: "Discover Litho",
     buttonLink: "#",
   },
   {
-    tabTitle: '03. TARGET',
-    subtitle: ' Unlimited power customization',
-    title: 'We created digital ideas that are bigger and bolder',
-    img: 'https://via.placeholder.com/800x717',
-    content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna ut enim ad minim veniam nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    buttonTitle: "Discover Litho",
-    buttonLink: "#"
-  },
-  {
-    tabTitle: '04. CAMPAIGN',
-    subtitle: 'Browse amazing social media features',
-    title: 'Litho is meant to simplify the website building',
-    img: 'https://via.placeholder.com/800x717',
+    tabTitle: '03. SHEET WORK',
+    subtitle: 'Unlimited power customization',
+    title: 'We offer a full range of digital marketing services',
+    img: '/assets/img/gallery/sheetwork.png',
     content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna ut enim ad minim veniam nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     buttonTitle: "Discover Litho",
     buttonLink: "#"
@@ -140,13 +131,13 @@ const WhatWeOfferPage = (props) => {
       <SideButtons />
       {/* Parallax Scrolling Start */}
       <div className="h-[660px] lg:h-[580px] md:h-[550px] sm:h-[500px] xs:h-[380px] overflow-hidden relative">
-        <Parallax className="lg-no-parallax h-[100vh] w-full bg-cover bg-top cover-background absolute top-[0px] left-0 lg:h-[700px] lg:-top-[100px] md:h-[650px] sm:h-[550px] xs:h-[420px] xs:-top-[70px]" translateY={[-40, 40]} style={{ backgroundImage: `url(https://via.placeholder.com/1920x1100)` }}></Parallax>
+        <Parallax className="lg-no-parallax h-[100vh] w-full bg-cover bg-top cover-background absolute top-[0px] left-0 lg:h-[700px] lg:-top-[100px] md:h-[650px] sm:h-[550px] xs:h-[420px] xs:-top-[70px]" translateY={[-40, 40]} style={{ backgroundImage: `url(/assets/img/webp/gallery7.jpg)` }}></Parallax>
         <div className="absolute h-full w-full opacity-50 top-0 left-0 bg-darkgray"></div>
         <Container className="h-full relative xs:px-[15px]">
           <Row className="justify-center h-full">
             <Col xl={6} lg={7} md={8} className="relative font-serif text-center text-white flex justify-center flex-col">
               <h1 className="opacity-60 mb-[20px] text-xmd leading-[20px]">What we offers</h1>
-              <h2 className="font-medium -tracking-[1px] mb-0">we are a creative design studio</h2>
+              <h2 className="font-medium -tracking-[1px] mb-0">Our Gallery</h2>
             </Col>
             <ScrollTo to="about" offset={0} delay={0} spy={true} smooth={true} duration={800} className="absolute bottom-[50px] left-1/2 w-auto inline-block -translate-x-1/2 cursor-pointer">
               <i className="ti-arrow-down text-lg leading-none text-white bg-[rgba(0,0,0,0.7)] p-[15px] xs:p-[10px] rounded-full flex justify-center items-center"></i>
@@ -189,7 +180,7 @@ const WhatWeOfferPage = (props) => {
       {/* Section End */}
 
       {/* Section Start */}
-      <section className="py-[130px] lg:py-[95px] md:py-[75px] sm:py-[50px] xs:px-[15px] bg-lightgray">
+      {/* <section className="py-[130px] lg:py-[95px] md:py-[75px] sm:py-[50px] xs:px-[15px] bg-lightgray">
         <Container>
           <IconWithText
             grid="row-cols-1 row-cols-lg-3 row-cols-sm-2"
@@ -198,11 +189,11 @@ const WhatWeOfferPage = (props) => {
             animation={fadeIn}
             animationDelay={0.1} />
         </Container>
-      </section>
+      </section> */}
       {/* Section End */}
 
       {/* Section Start */}
-      <m.section className="py-[130px] lg:py-[95px] md:py-[75px] sm:py-[50px] overflow-hidden" {...fadeIn}>
+      <m.section className="bg-[#f8f2eb] py-[130px] lg:py-[95px] md:py-[75px] sm:py-[50px] overflow-hidden" {...fadeIn}>
         <Container>
           <Row className="items-center">
             <Col md={5} className="sm:mb-[30px]">
@@ -232,7 +223,7 @@ const WhatWeOfferPage = (props) => {
       {/* Section End */}
 
       {/* Section Start */}
-      <section className="py-[130px] lg:py-[95px] md:py-[75px] sm:py-[50px] bg-lightgray overflow-hidden">
+      {/* <section className="py-[130px] lg:py-[95px] md:py-[75px] sm:py-[50px] bg-lightgray overflow-hidden">
         <Container>
           <Row className="items-center">
             <m.div className="md:mb-[50px] sm:mb-[30px] col-xl-4 col-lg-6 offset-xl-2 order-lg-2" {...{ ...fadeInLeft, transition: { delay: 0.5, ease: "circOut", duration: 0.6 } }}>
@@ -250,11 +241,11 @@ const WhatWeOfferPage = (props) => {
             </m.div>
           </Row>
         </Container>
-      </section>
+      </section> */}
       {/* Section End */}
 
       {/* Section Start */}
-      <section className="py-[130px] lg:py-[95px] md:py-[75px] sm:py-[50px] overflow-hidden">
+      {/* <section className="py-[130px] lg:py-[95px] md:py-[75px] sm:py-[50px] overflow-hidden">
         <Container>
           <Piechart
             className="text-center"
@@ -268,9 +259,30 @@ const WhatWeOfferPage = (props) => {
             textStyle={{ fontSize: "32px", fill: "#232323" }}
           />
         </Container>
-      </section>
+      </section> */}
       {/* Section End */}
-
+      <Container className="pt-[160px] lg:pt-[120px] md:pt-[95px] sm:pt-[80px] xs:pt-[50px]">
+          <Row className="justify-center ">
+            <Col md={6} className="text-center mb-10">
+              <span className="font-serif mb-[5px] inline-block uppercase font-medium text-spanishgray">Meet our team</span>
+              <h5 className="font-serif text-darkgray font-medium">Creative People</h5>
+            </Col>
+          </Row>
+          <Row>
+          <section className="pb-[160px] lg:pb-[120px] md:pb-[95px] sm:pb-[80px] xs:pb-[50px]">
+        <Container>
+          <Team
+            themeColor="dark"
+            theme='team-style-01'
+            color={["#556fffcc", "#b263e4cc", "#e05fc4cc", "#f767a6cc", "#ff798ecc"]}
+            data={TeamData01}
+            animation={fadeIn}
+            carousel={true}
+            carouselOption={{ slidesPerView: 1, spaceBetween: 30, loop: true, navigation: false, autoplay: { delay: 3000, disableOnInteraction: false }, pagination: { dynamicBullets: true, clickable: true }, breakpoints: { 1200: { slidesPerView: 4 }, 992: { slidesPerView: 3 }, 768: { slidesPerView: 2 } } }} />
+        </Container>
+      </section>
+          </Row>
+        </Container>
       {/* Parallax Scrolling Start */}
       <div className="h-[600px] md:h-[450px] sm:h-[350px] bg-top overflow-hidden relative">
         <Parallax className="lg-no-parallax bg-cover cover-background absolute top-[0px] left-0 md:-top-[30px] w-full h-[100vh]" translateY={[-50, 50]} style={{ backgroundImage: `url(https://via.placeholder.com/1920x1100)` }}></Parallax>
@@ -309,7 +321,7 @@ const WhatWeOfferPage = (props) => {
         </Container>
         <Container>
           <Row className="justify-center">
-            <Col md={6} className="text-center mb-20">
+            <Col md={6} className="text-center mb-10">
               <span className="font-serif mb-[5px] inline-block uppercase font-medium text-spanishgray">Meet our team</span>
               <h5 className="font-serif text-darkgray font-medium">Creative People</h5>
             </Col>
@@ -320,7 +332,7 @@ const WhatWeOfferPage = (props) => {
                 themeColor="dark"
                 theme='team-style-02'
                 className="text-white sm:justify-center"
-                overlay={["#b783fff2", "#e37be0f2", "#fa7cc1f2", "#ff85a6f2", "#ff9393f2"]}
+                overlay={["#353535", "#D7D7D7"]}
                 data={TeamData02}
                 grid="row-cols-1 row-cols-sm-2 row-cols-md-3 gap-y-10"
                 animation={fadeIn}
@@ -331,6 +343,11 @@ const WhatWeOfferPage = (props) => {
         </Container>
       </m.section>
       {/* Section End */}
+
+
+
+    
+      
 
       {/* Section Start */}
       <FooterStyle01 theme="dark" className="bg-[#262b35] text-slateblue overflow-visible" />
