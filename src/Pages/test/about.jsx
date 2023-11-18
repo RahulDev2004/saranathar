@@ -147,8 +147,8 @@ const WhoWeArePage = (props) => {
 
             {/* Parallax Scrolling Start */}
             <div className="h-[660px] lg:h-[580px] md:h-[550px] sm:h-[500px] xs:h-[380px] overflow-hidden relative">
-                <Parallax className="lg-no-parallax h-[100vh] w-full bg-cover bg-top cover-background absolute top-[0px] left-0 lg:h-[700px] lg:-top-[100px] md:h-[650px] sm:h-[550px] xs:h-[420px] xs:-top-[70px]" translateY={[-40, 40]} style={{ backgroundImage: `url('/images/services/main-banner.jpg')` }}></Parallax>
-                <div className="absolute h-full w-full opacity-50 top-0 left-0 bg-darkgray"></div>
+                <Parallax className="lg-no-parallax h-[100vh] w-full bg-cover bg-top cover-background absolute top-[0px] left-0 lg:h-[700px] lg:-top-[100px] md:h-[650px] sm:h-[550px] xs:h-[420px] xs:-top-[70px]" translateY={[-40, 40]} style={{ backgroundImage: `url('/images/about/main-banner.jpg')` }}></Parallax>
+                <div className="absolute h-full w-full opacity-30 top-0 left-0 bg-darkgray"></div>
                 <Container className="h-full relative xs:px-[15px]">
                     <Row className="justify-center h-full">
                         <Col xl={6} lg={7} md={8} className="relative font-serif text-center text-white flex justify-center flex-col">

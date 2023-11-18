@@ -169,7 +169,7 @@ const WhatWeOfferPage = (props) => {
 
             {/* Parallax Scrolling Start */}
             <div className="h-[600px] md:h-[450px] sm:h-[350px] bg-top overflow-hidden relative">
-                <Parallax className="lg-no-parallax bg-cover cover-background absolute top-[0px] left-0 md:-top-[30px] w-full h-[100vh]" translateY={[-50, 50]} style={{ backgroundImage: `url(https://via.placeholder.com/1920x1100)` }}></Parallax>
+                <Parallax className="lg-no-parallax bg-cover cover-background absolute top-[0px] left-0 md:-top-[30px] w-full h-[100vh]" translateY={[-50, 50]} style={{ backgroundImage: `url(/images/services/parallax-banner.jpg)` }}></Parallax>
             </div>
             {/* Parallax Scrolling End */}
 
