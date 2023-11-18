@@ -39,19 +39,19 @@ const ListData02 = [
 const ListData03 = [
     {
         icon: "feather-check",
-        content: "GREAT ENVIRONMENT",
+        content: "40+ SUCCESS STORIES",
     },
     {
         icon: "feather-check",
-        content: "FREE BREAKFAST",
+        content: "GLOBAL PRESENCE",
     },
     {
         icon: "feather-check",
-        content: "CLEAN ROOM EVERYDAY",
+        content: "MASTERY OVER WORK",
     },
     {
         icon: "feather-check",
-        content: "NO BOOKING FEE",
+        content: "SEASONED ARTISANS",
     },
 ]
 

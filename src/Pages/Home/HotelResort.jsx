@@ -18,7 +18,6 @@ import Testimonials from '../../Components/Testimonials/Testimonials';
 import { Input } from '../../Components/Form/Form'
 import MessageBox from '../../Components/MessageBox/MessageBox';
 import SocialIcons from '../../Components/SocialIcon/SocialIcons';
-import Clients from '../../Components/Clients/Clients';
 import CustomModal from '../../Components/CustomModal'
 import FooterMenu, { Footer } from '../../Components/Footers/Footer';
 import { fadeIn, zoomIn } from '../../Functions/GlobalAnimations';
@@ -31,30 +30,29 @@ import { resetForm, sendEmail } from "../../Functions/Utilities";
 // Data
 import { ListData03 } from '../../Components/Lists/ListsData';
 import FooterData from '../../Components/Footers/FooterData';
-import { ClientData08 } from '../../Components/Clients/ClientsData';
 
 const IconWithText = lazy(() => import('../../Components/IconWithText/IconWithText'))
 
 const IconWithTextData = [
   {
     icon: "line-icon-King-2 text-[#c89965] text-[40px]",
-    title: "Exclusive chefs",
-    content: "Lorem ipsum dolor amet adipiscing eiusmod",
+    title: "Cultural Stewardship",
+    content: "Crafting Cultural Legacies for Over 15 Years",
   },
   {
     icon: "line-icon-Car-3 text-[#c89965] text-[40px]",
-    title: "Pick up & drop",
-    content: "Lorem ipsum dolor amet adipiscing eiusmod",
+    title: "Global Presence",
+    content: "Beyond Borders - Crafting Divine Atmospheres Worldwide",
   },
   {
     icon: "line-icon-Juice text-[#c89965] text-[40px]",
-    title: "Welcome drink",
-    content: "Lorem ipsum dolor amet adipiscing eiusmod",
+    title: "Artisanal Wisdom",
+    content: "10 Artisans, 15+ Years Each - Where Tradition Meets Skill",
   },
   {
     icon: "line-icon-Swimming text-[#c89965] text-[40px]",
-    title: "Swimming pool",
-    content: "Lorem ipsum dolor amet adipiscing eiusmod",
+    title: "Divine Precision",
+    content: "Crafting every work with Meticulous Precision",
   },
 ]
 
@@ -160,15 +158,17 @@ const HotelResortPage = (props) => {
           <Container fluid="lg">
             <Row className="items-center justify-center px-[15px]">
               <Col className="col-12 col-md-3 header-social-icon me-auto ps-lg-0 border-0">
-                <span className="font-serif text-sm uppercase font-medium">Call: 1-800-222-000</span>
+                {/* <span className="font-serif text-sm uppercase font-medium">Call: +91 12345 12345</span> */}
+                <Link to="#" className="font-serif text-sm uppercase font-medium hover:text-[#ffffff99]">
+                  <i className="feather-phone mr-[5px]"></i>+91 12345 12345</Link>
               </Col>
               <Col className="col-12 col-md-6 text-center px-md-0 sm-padding-5px-tb line-height-normal">
-                <span className="text-sm font-serif font-medium inline-block">ENJOY SPECIALS PACKAGES AND RESORT OFFERS</span>
+                <span className="text-sm font-serif font-medium inline-block">ELEVATING TEMPLES WITH ARTISTRY</span>
               </Col>
               <Col className="col-12 col-md-3 text-end pe-lg-0">
                 <div className="header-search-icon search-form-wrapper">
                   <Link to="#" className="font-serif text-sm uppercase font-medium hover:text-[#ffffff99]">
-                    <i className="feather-calendar mr-[5px]"></i>Book your stay</Link>
+                    <i className="feather-mail mr-[5px]"></i>example@someone.com</Link>
                 </div>
               </Col>
             </Row>
@@ -249,7 +249,7 @@ const HotelResortPage = (props) => {
                             transition={{ delay: 1.5, duration: 0.6 }}
                             animation={{ ease: "easeIn" }}
                             className="inline-block">
-                            <Buttons ariaLabel="packge book link" href="#" className="bg-darkgray text-[#fff] hover:bg-white hover:text-darkgray hover:border-transparent border-transparent mt-[10px] btn-fancy font-medium font-serif rounded-none uppercase btn-fancy md:mb-[15px]" themeColor="#232323" color="#fff" size="md" title="booking now" />
+                            <Buttons ariaLabel="packge book link" href="#" className="bg-darkgray text-[#fff] hover:bg-white hover:text-darkgray hover:border-transparent border-transparent mt-[10px] btn-fancy font-medium font-serif rounded-none uppercase btn-fancy md:mb-[15px]" themeColor="#232323" color="#fff" size="md" title="Contact Us" />
                           </m.div>
                         </Col>
                       </Row>
@@ -269,12 +269,12 @@ const HotelResortPage = (props) => {
           <Row className="mb-36 md:mb-16 sm:mb-20">
             <m.div className="col-lg-4 col-md-7 md:mb-[60px] sm:mb-[20px]" {...{ ...fadeIn, transition: { delay: 0.2 } }}>
               <i className="line-icon-Plates text-[40px] mb-[35px] inline-block"></i>
-              <span className="font-serif font-semibold text-md text-[#c89965] uppercase block mb-[20px] tracking-[1px]">About luxury resorts</span>
-              <h2 className="heading-5 font-serif font-medium text-[#333045] mb-0">Relax at the luxury resorts around the entire world</h2>
+              <span className="font-serif font-semibold text-md text-[#c89965] uppercase block mb-[20px] tracking-[1px]">About Our Works</span>
+              <h2 className="heading-5 font-serif font-medium text-[#333045] mb-0">Divine Craftsmanship: Elevating Spiritual Spaces</h2>
             </m.div>
             <m.div className="col-lg-5 col-xl-4 col-md-6 md:mb-[30px] sm:mb-[50px]" {...fadeIn}>
-              <span className="font-serif font-medium text-darkgray block mb-[25px] lg:w-[95%] sm:w-full sm:mb-[15px]">Our hotel has been present for over 20 years. We make the best for all our customers.</span>
-              <p className="lg:w-[95%] sm:mb-[15px] mb-[20px]">Lorem ipsum dolor sit amet consectetur adipiscing eiusmod tempor incididunt labore dolore magna minim veniam nostrud exercitation ullamco.</p>
+              <span className="font-serif font-medium text-darkgray block mb-[25px] lg:w-[95%] sm:w-full sm:mb-[15px]">With over 15 years of experience. We provide the best services for all temples.</span>
+              <p className="lg:w-[95%] sm:mb-[15px] mb-[20px]">Nestled in the heart of South India, our skilled artisans blend tradition to the spiritual realm. We take pride in transforming sacred spaces into timeless masterpieces</p>
               <Buttons aria-label="link for about" href="#" className="font-serif uppercase btn-link after:h-[1px] leading-[28px] font-semibold md:text-md md:mb-[15px] after:bg-darkgray hover:text-darkgray" color="#232323" title="Explore resort" />
             </m.div>
             <m.div className="col-lg-3 col-md-6 offset-xl-1" {...{ ...fadeIn, transition: { delay: 0.4 } }}>
@@ -294,8 +294,8 @@ const HotelResortPage = (props) => {
               <Row className="justify-center">
                 <Col xl={5} sm={9} className="xs:text-center">
                   <i className="line-icon-Slippers text-[50px] mb-[35px] inline-block xs:mb-[25px]"></i>
-                  <span className="font-serif font-semibold text-md text-[#c89965] block uppercase mb-[25px] tracking-[1px] xs:mb-[15px]">Why choose resort</span>
-                  <h2 className="heading-4 font-serif font-medium text-black mb-0 xs:w-[70%] mx-auto">Five reasons to stay with us</h2>
+                  <span className="font-serif font-semibold text-md text-[#c89965] block uppercase mb-[25px] tracking-[1px] xs:mb-[15px]">Why Choose Us</span>
+                  <h2 className="heading-4 font-serif font-medium text-black mb-0 xs:w-[70%] mx-auto">Reasons to choose us</h2>
                 </Col>
               </Row>
             </m.div>
@@ -311,24 +311,24 @@ const HotelResortPage = (props) => {
                 <SwiperSlide className="overflow-hidden cover-background relative" style={{ backgroundImage: `url(/assets/img/webp/homeslider1.png)` }}>
                   <div className="flex flex-col justify-end h-full" >
                     <div className="bg-white pl-24 pr-20 py-[4.5rem] w-[55%] lg:w-[75%] lg:py-[3.5rem] lg:px-16 md:w-[60%] sm:w-[75%] xs:w-[80%]">
-                      <h3 className="heading-6 font-serif font-medium text-[#333045] mb-[15px]">Exclusive restaurants</h3>
-                      <p className="w-[89%] sm:w-full">Lorem ipsum dolor amet consectetur adipiscing do eiusmod tempor incididunt ut labore magna Ut enim minim nostrud exercitation ullamco laboris nisiex ea commodo consequat.</p>
+                      <h3 className="heading-6 font-serif font-medium text-[#333045] mb-[15px]">Heritage Craftsmanship</h3>
+                      <p className="w-[89%] sm:w-full">With 15+ years of expertise, we blend ancient techniques with modern skill, crafting divine stories in metal strokes that reflect our cultural richness.</p>
                     </div>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="overflow-hidden cover-background relative" style={{ backgroundImage: `url(/assets/img/webp/homeslider7.png)` }}>
                   <div className="flex flex-col justify-end h-full" >
                     <div className="bg-white px-24 py-[4.5rem] w-[55%] lg:w-[75%] lg:py-[3.5rem] lg:px-16 md:w-[60%] sm:w-[75%] xs:w-[80%]">
-                      <h3 className="heading-6 font-serif font-medium text-[#333045] mb-[15px]">Large swimming pool</h3>
-                      <p className="w-[89%] sm:w-full">Lorem ipsum dolor amet consectetur adipiscing do eiusmod tempor incididunt ut labore magna Ut enim minim nostrud exercitation ullamco laboris nisiex ea commodo consequat.</p>
+                      <h3 className="heading-6 font-serif font-medium text-[#333045] mb-[15px]">Global Temple Artisans</h3>
+                      <p className="w-[89%] sm:w-full">Choose us to bring the essence of divine craftsmanship to your space. From South India's temples to global sanctuaries, trust our commitment to transcendent art.</p>
                     </div>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="overflow-hidden cover-background relative" style={{ backgroundImage: `url(/assets/img/webp/homeslider.png)` }}>
                   <div className="flex flex-col justify-end h-full" >
                     <div className="bg-white px-24 py-[4.5rem] w-[55%] lg:w-[75%] lg:py-[3.5rem] lg:px-16 md:w-[60%] sm:w-[75%] xs:w-[80%]">
-                      <h3 className="heading-6 font-serif font-medium text-[#333045] mb-[15px]">Luxury spa massage</h3>
-                      <p className="w-[89%] sm:w-full">Lorem ipsum dolor amet consectetur adipiscing do eiusmod tempor incididunt ut labore magna Ut enim minim nostrud exercitation ullamco laboris nisiex ea commodo consequat.</p>
+                      <h3 className="heading-6 font-serif font-medium text-[#333045] mb-[15px]">Crafting Elegance, Building Trust</h3>
+                      <p className="w-[89%] sm:w-full">With seasoned artisans and a portfolio adorning 40 temples, trust our precision and passion for your temples.</p>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -365,8 +365,8 @@ const HotelResortPage = (props) => {
         <Container>
           <m.div className="row justify-center" {...fadeIn}>
             <Col lg={7} md={8} xl={6} className="text-center mb-36 lg:mb-[7.5rem]">
-              <span className="font-serif font-semibold text-[#c89965] uppercase text-md tracking-[1px] mb-[25px] block">A holiday to Remember, Limited rooms available!</span>
-              <h2 className="heading-5 font-serif font-medium text-[#333045] -tracking-[1px] w-[95%] inline-block mb-[45px] xs:w-full">We offers the perfect setting for rare moments of romance</h2>
+              <span className="font-serif font-semibold text-[#c89965] uppercase text-md tracking-[1px] mb-[25px] block">Crafting Elegance!</span>
+              <h2 className="heading-5 font-serif font-medium text-[#333045] -tracking-[1px] w-[95%] inline-block mb-[45px] xs:w-full">Contact Us to Elevate Your Temple's Aura Now</h2>
               <Buttons aria-label="link for holiday" href="#" className="btn-fill font-medium font-serif rounded-none uppercase" themeColor="#333045" color="#fff" size="md" title="View Gallery" />
             </Col>
           </m.div>
@@ -390,8 +390,8 @@ const HotelResortPage = (props) => {
         <Container>
           <Row className="justify-center">
             <Col md={6} lg={5} className="text-center mb-16 md:mb-12">
-              <span className="font-serif font-semibold text-md text-[#c89965] uppercase tracking-[1px] block mb-[10px]">Exclusive offers</span>
-              <h2 className="heading-5 font-serif font-medium text-[#333045] -tracking-[1px]">Featured specials</h2>
+              <span className="font-serif font-semibold text-md text-[#c89965] uppercase tracking-[1px] block mb-[10px]">Our Works</span>
+              <h2 className="heading-5 font-serif font-medium text-[#333045] -tracking-[1px]">Explore Our Works</h2>
             </Col>
           </Row>
           <InfoBannerStyle01 animation={fadeIn} grid="row row-cols-1 row-cols-lg-3 gap-y-10" className="justify-center" data={infoData} />
