@@ -28,7 +28,7 @@ const Services = (props) => {
                                     </div>}
                                 </div>
                                 <div className='service-style'>
-                                    {props.theme === "service-style-03" && <span className='verticalline'></span>}
+                                    {/* {props.theme === "service-style-03" && <span className='verticalline'></span>} */}
                                     {item.title && <span className="title font-medium text-darkgray block font-serif mb-[10px]">{item.title}</span>}
                                     {item.content && <p>{item.content}</p>}
                                     {(props.theme === "service-style-02" || props.theme === "service-style-05") && <div className='info-service'>

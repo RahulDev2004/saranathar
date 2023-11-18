@@ -386,24 +386,24 @@ const InteractiveBannersData13 = [
 
 const InteractiveBannersData14 = [
     {
-        img: "https://via.placeholder.com/600x660",
-        title: "Honeymoon package",
+        img: "/assets/img/gallery/home1.png",
+        title: "Statues",
         subtitle: "GET 50% OFF",
         content: "Lorem ipsum dolor amet adipiscing tempor",
         btnTitle: "Book Now",
         btnLink: "#"
     },
     {
-        img: "https://via.placeholder.com/600x660",
-        title: "Cocktail package",
+        img: "/assets/img/gallery/home2.png",
+        title: "Gold Works",
         subtitle: "GET 30% OFF",
         content: "Lorem ipsum dolor amet adipiscing tempor",
         btnTitle: "Book Now",
         btnLink: "#"
     },
     {
-        img: "https://via.placeholder.com/600x660",
-        title: "Massage package",
+        img: "/assets/img/gallery/home4.png",
+        title: "Sheet Works",
         subtitle: "GET 50% OFF",
         content: "Lorem ipsum dolor amet adipiscing tempor",
         btnTitle: "Book Now",

@@ -70,17 +70,17 @@ const IconWithTextData_02 = [
 
 const serviceData = [
     {
-        img: "https://via.placeholder.com/800x560",
+        img: "/assets/img/gallery/about3.png",
         title: "Real time analytics",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     },
     {
-        img: "https://via.placeholder.com/800x560",
+        img: "/assets/img/gallery/about5.png",
         title: "Google advertising",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     },
     {
-        img: "https://via.placeholder.com/800x560",
+        img: "/assets/img/gallery/about7.png",
         title: "Pixel perfect design",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     }
@@ -114,11 +114,11 @@ const WhoWeArePage = (props) => {
         <div className="who-we-are" style={props.style}>
             {/* Header Start */}
             <Header topSpace={{ md: true }} type="reverse-scroll">
-                <HeaderNav fluid="fluid" theme="dark" expand="lg" className="px-[35px] py-[0px] md:px-0" containerClass="sm:px-0">
+            <HeaderNav theme="light" expand="lg" className="py-[0px] border-b !border-b-[#0000001a] lg:px-[15px] md:px-0" containerClass="sm:px-0">
                     <Col className="col-auto col-sm-6 col-lg-2 me-auto ps-lg-0">
                         <Link aria-label="header logo" className="flex items-center" to="/">
                             <Navbar.Brand className="inline-block p-0 m-0">
-                                <img className="default-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-white.webp' data-rjs='/assets/img/webp/logo-white@2x.webp' alt='logo' />
+                                <img className="default-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-black.webp' data-rjs='/assets/img/webp/logo-black@2x.webp' alt='logo' />
                                 <img className="alt-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-fast-blue-black.webp' data-rjs='/assets/img/webp/logo-fast-blue-black@2x.webp' alt='logo' />
                                 <img className="mobile-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-fast-blue-black.webp' data-rjs='/assets/img/webp/logo-fast-blue-black@2x.webp' alt='logo' />
                             </Navbar.Brand>
@@ -136,9 +136,9 @@ const WhoWeArePage = (props) => {
                         <Menu {...props} />
                     </Navbar.Collapse>
                     <Col className="col-auto text-right pe-0">
-                        <SearchBar className="pr-0" />
-                        <HeaderLanguage />
-                        <HeaderCart />
+                        <SearchBar className="pr-0 xs:pl-[15px]" />
+                        <HeaderLanguage className="xs:pl-[15px]" />
+                        <HeaderCart className="xs:pl-[15px]" style={{ "--base-color": "#0038e3" }} />
                     </Col>
                 </HeaderNav>
             </Header>
@@ -147,8 +147,8 @@ const WhoWeArePage = (props) => {
 
             {/* Parallax Scrolling Start */}
             <div className="h-[660px] lg:h-[580px] md:h-[550px] sm:h-[500px] xs:h-[380px] overflow-hidden relative">
-                <Parallax className="lg-no-parallax h-[100vh] w-full bg-cover bg-top cover-background absolute top-[0px] left-0 lg:h-[700px] lg:-top-[100px] md:h-[650px] sm:h-[550px] xs:h-[420px] xs:-top-[70px]" translateY={[-40, 40]} style={{ backgroundImage: `url('/images/about/main-banner.jpg')` }}></Parallax>
-                <div className="absolute h-full w-full opacity-30 top-0 left-0 bg-darkgray"></div>
+                <Parallax className="lg-no-parallax h-[100vh] w-full bg-cover bg-top cover-background absolute top-[0px] left-0 lg:h-[700px] bg-[#C89965] lg:-top-[100px] md:h-[650px] sm:h-[550px] xs:h-[420px] xs:-top-[70px]" translateY={[-40, 40]} ></Parallax>
+                {/* <div className="absolute h-full w-full opacity-30 top-0 left-0 bg-darkgray"></div> */}
                 <Container className="h-full relative xs:px-[15px]">
                     <Row className="justify-center h-full">
                         <Col xl={6} lg={7} md={8} className="relative font-serif text-center text-white flex justify-center flex-col">
@@ -168,7 +168,7 @@ const WhoWeArePage = (props) => {
                 <Container>
                     <Row className="font-serif">
                         <Col lg={4} className="pe-lg-0 flex md:mb-[30px]">
-                            <div className="w-full md:h-[700px] sm:h-[550px] xs:h-[450px] cover-background" style={{ backgroundImage: "url('https://via.placeholder.com/800x1000') " }}></div>
+                            <div className="w-full md:h-[700px] sm:h-[550px] xs:h-[450px] cover-background" style={{ backgroundImage: "url('/assets/img/gallery/about1.png') " }}></div>
                         </Col>
                         <Col lg={4} md={6} className="ps-lg-0 flex items-center sm:mb-[30px]">
                             <div className="justify-center h-full w-full flex flex-col items-start bg-[#C89965] px-[5.5rem] lg:px-[3rem] md:p-16">
@@ -178,7 +178,7 @@ const WhoWeArePage = (props) => {
                             </div>
                         </Col>
                         <Col lg={4} md={6} className="flex flex-col pr-0">
-                            <img src="https://via.placeholder.com/800x600" alt="about us" className="sm:w-full" />
+                            <img src="/assets/img/gallery/about2.png" alt="about us" className="sm:w-full" />
                             <div className="bg-white px-[3.5rem] py-[3rem] h-full lg:p-8 sm:p-16">
                                 <span className="text-darkgray font-medium mb-[10px] block">About digital agency</span>
                                 <p className="font-sans">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text.</p>
@@ -239,11 +239,11 @@ const WhoWeArePage = (props) => {
             {/* Section End */}
 
             {/* Section Start */}
-            <section className="pt-[130px] lg:pt-[90px] md:pt-[75px] sm:py-[50px]" {...fadeIn}>
+            <section className="py-[80px] lg:py-[50px] md:py-[45px] sm:py-[35px]" {...fadeIn}>
                 <Container fluid>
                     <Row className="justify-center">
                         <Col>
-                            <img loading="lazy" className="mx-auto" src="https://via.placeholder.com/1490x550" alt="who-we-are" width="1490" height="550" />
+                            <img loading="lazy" className="mx-auto" src="/assets/img/gallery/about9.png" alt="who-we-are" width="1490" height="550" />
                         </Col>
                     </Row>
                 </Container>
@@ -251,7 +251,7 @@ const WhoWeArePage = (props) => {
             {/* Section End */}
 
             {/* Section Start */}
-            <section className="py-[80px] sm:py-[50px] overflow-hidden">
+            <section className="py-[80px] bg-[#EEE7DE] sm:py-[50px] overflow-hidden">
                 <Container>
                     <Row>
                         <h6 className="font-serif text-gray-900 text-center font-medium mb-24 xs:mb-16"> Why Choose Us? </h6>
@@ -273,7 +273,7 @@ const WhoWeArePage = (props) => {
 
 
             {/*Section Start */}
-            <m.section className="py-[160px] lg:py-[120px] md:py-[95px] sm:py-[80px] xs:py-[50px] bg-[#EEE7DE]" {...fadeIn}>
+            {/* <m.section className="py-[160px] lg:py-[120px] md:py-[95px] sm:py-[80px] xs:py-[50px] bg-[#EEE7DE]" {...fadeIn}>
                 <h6 className="font-serif text-gray-900 text-center font-medium mb-24 xs:mb-16"> Testimonials carousel style 02 </h6>
                 <Container>
                     <Row>
@@ -291,11 +291,11 @@ const WhoWeArePage = (props) => {
                         />
                     </Row>
                 </Container>
-            </m.section>
+            </m.section> */}
             {/*Section End */}
 
             {/* Section start */}
-            <m.section className="py-[160px] lg:py-[120px] md:py-[95px] sm:py-[80px] xs:py-[50px] overflow-hidden" {...fadeIn}>
+            <m.section className="py-[160px] bg-[#f8f2eb] lg:py-[120px] md:py-[95px] sm:py-[80px] xs:py-[50px] overflow-hidden" {...fadeIn}>
                 <Container>
                     <Row className="justify-center text-center font-serif font-medium text-darkgray">
                         <Col xl={7} lg={8} md={10}>
