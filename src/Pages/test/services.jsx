@@ -16,7 +16,7 @@ import FooterStyle01 from '../../Components/Footers/FooterStyle01';
 import CustomModal from '../../Components/CustomModal'
 import SideButtons from "../../Components/SideButtons";
 // Data
-import { ListData03 } from '../../Components/Lists/ListsData';
+import { ListData03, ListData09 } from '../../Components/Lists/ListsData';
 import Services from '../../Components/Services/Services';
 import { serviceData1 } from '../../Components/Services/ServicesData';
 import ImageGallery from '../../Components/ImageGallery/ImageGallery';
@@ -29,7 +29,7 @@ const WhatWeOfferPage = (props) => {
         <div style={props.style} className='bg-[#FFF]'>
             {/* Header Start */}
             <Header topSpace={{ md: true }} type="reverse-scroll">
-            <HeaderNav theme="light" expand="lg" className="py-[0px] border-b !border-b-[#0000001a] lg:px-[15px] md:px-0" containerClass="sm:px-0">
+                <HeaderNav theme="light" expand="lg" className="py-[0px] border-b !border-b-[#0000001a] lg:px-[15px] md:px-0" containerClass="sm:px-0">
                     <Col className="col-auto col-sm-6 col-lg-2 me-auto ps-lg-0">
                         <Link aria-label="header logo" className="flex items-center" to="/">
                             <Navbar.Brand className="inline-block p-0 m-0">
@@ -115,8 +115,8 @@ const WhatWeOfferPage = (props) => {
                 <Container>
                     <Row className="justify-center">
                         <m.div className="col-lg-5 col-ms-6 text-center mb-16 md:mb-12" {...fadeIn}>
-                            <span className="font-serif font-semibold text-medium text-[#c89965] text-md uppercase tracking-[1px] block mb-[10px]">Exclusive rating</span>
-                            <h3 className="heading-5 font-serif font-medium text-[#333045] -tracking-[1px]">What customer say</h3>
+                            <span className="font-serif font-semibold text-medium text-[#c89965] text-md uppercase tracking-[1px] block mb-[10px]">Our Services</span>
+                            <h3 className="heading-5 font-serif font-medium text-[#333045] -tracking-[1px]">What Do We Offer?</h3>
                         </m.div>
                     </Row>
                     <Services grid="row-cols-1 row-cols-lg-3 row-cols-sm-2 gap-y-10 justify-center text-center" theme='service-style-01' className="" data={serviceData1} animation={fadeIn} />
@@ -131,16 +131,16 @@ const WhatWeOfferPage = (props) => {
                     <Row className="mb-36 md:mb-16 sm:mb-20">
                         <m.div className="col-lg-4 col-md-7 md:mb-[60px] sm:mb-[20px]" {...{ ...fadeIn, transition: { delay: 0.2 } }}>
                             <i className="line-icon-Plates text-[40px] mb-[35px] inline-block"></i>
-                            <span className="font-serif font-semibold text-md text-[#c89965] uppercase block mb-[20px] tracking-[1px]">About luxury resorts</span>
-                            <h2 className="heading-5 font-serif font-medium text-[#333045] mb-0">Relax at the luxury resorts around the entire world</h2>
+                            <span className="font-serif font-semibold text-md text-[#c89965] uppercase block mb-[20px] tracking-[1px]">Our Craftsmanship</span>
+                            <h2 className="heading-5 font-serif font-medium text-[#333045] mb-0">We Provide The Best Service in the Industry</h2>
                         </m.div>
                         <m.div className="col-lg-5 col-xl-4 col-md-6 md:mb-[30px] sm:mb-[50px]" {...fadeIn}>
-                            <span className="font-serif font-medium text-darkgray block mb-[25px] lg:w-[95%] sm:w-full sm:mb-[15px]">Our hotel has been present for over 20 years. We make the best for all our customers.</span>
-                            <p className="lg:w-[95%] sm:mb-[15px] mb-[20px]">Lorem ipsum dolor sit amet consectetur adipiscing eiusmod tempor incididunt labore dolore magna minim veniam nostrud exercitation ullamco.</p>
+                            <span className="font-serif font-medium text-darkgray block mb-[25px] lg:w-[95%] sm:w-full sm:mb-[15px]">With over 15 years of experience, we provide the best service in the industry</span>
+                            <p className="lg:w-[95%] sm:mb-[15px] mb-[20px]">We have worked in 40 of the 108 divyadesam. In the realm of divine craftsmanship, our commitment to excellence transcends the ordinary</p>
                             <Buttons aria-label="link for about" href="#" className="font-serif uppercase btn-link after:h-[1px] leading-[28px] font-semibold md:text-md md:mb-[15px] after:bg-darkgray hover:text-darkgray" color="#232323" title="Explore resort" />
                         </m.div>
                         <m.div className="col-lg-3 col-md-6 offset-xl-1" {...{ ...fadeIn, transition: { delay: 0.4 } }}>
-                            <Lists theme="list-style-03" data={ListData03} animation={fadeIn} />
+                            <Lists theme="list-style-03" data={ListData09} animation={fadeIn} />
                         </m.div>
                     </Row>
                     <InteractiveBanners14 animation={fadeIn} grid="row-cols-1 row-cols-lg-3 row-cols-md-2 gx-4 gap-y-10" className="justify-center" />
@@ -154,8 +154,8 @@ const WhatWeOfferPage = (props) => {
                 <Container fluid>
                     <Row className="justify-center">
                         <m.div className="col-lg-5 col-ms-6 text-center mb-16 md:mb-12" {...fadeIn}>
-                            <span className="font-serif font-semibold text-medium text-[#c89965] text-md uppercase tracking-[1px] block mb-[10px]">Exclusive rating</span>
-                            <h3 className="heading-5 font-serif font-medium text-[#333045] -tracking-[1px]">What customer say</h3>
+                            <span className="font-serif font-semibold text-medium text-[#c89965] text-md uppercase tracking-[1px] block mb-[10px]">Our Excellence</span>
+                            <h3 className="heading-5 font-serif font-medium text-[#333045] -tracking-[1px]">The Results of Our Excellence</h3>
                         </m.div>
                     </Row>
                     <Row>
@@ -166,7 +166,7 @@ const WhatWeOfferPage = (props) => {
             {/* section end */}
 
 
-          
+
             {/* Parallax Scrolling End */}
 
             {/* Section Start */}
@@ -174,16 +174,16 @@ const WhatWeOfferPage = (props) => {
                 <Container>
                     <Row className="justify-center text-center font-serif font-medium text-darkgray">
                         <Col xl={7} lg={8} md={10}>
-                            <span className="tracking-[2px] uppercase opacity-50 block mb-[30px] md:mb-[20px]">yoga enhances your life</span>
-                            <h2 className="-tracking-[2px] mb-[50px] md:mb-[40px] xs:w-[98%] xs:mx-auto">Yoga is the journey of the self through the self</h2>
+                            <span className="tracking-[2px] uppercase opacity-50 block mb-[30px] md:mb-[20px]">CRAFTING ELEGANCE!</span>
+                            <h2 className="-tracking-[2px] mb-[50px] md:mb-[40px] xs:w-[98%] xs:mx-auto">Contact Us to Elevate Your Temple's Aura Now</h2>
                             <Buttons ariaLabel="button link" href="#" className="font-medium font-serif tracking-[1px] uppercase rounded-sm !leading-[1.7]" themeColor={["#C89965", "#C89965"]} size="lg" color="#fff" title="Contact Us" />
                         </Col>
                     </Row>
                 </Container>
             </m.section>
             {/* Section End */}
-  {/* Parallax Scrolling Start */}
-  <div className="h-[600px] md:h-[450px] sm:h-[350px] bg-top overflow-hidden relative">
+            {/* Parallax Scrolling Start */}
+            <div className="h-[600px] md:h-[450px] sm:h-[350px] bg-top overflow-hidden relative">
                 <Parallax className="lg-no-parallax bg-cover cover-background absolute top-[0px] left-0 md:-top-[30px] w-full h-[100vh]" translateY={[-50, 50]} style={{ backgroundImage: `url(/assets/img/gallery/paralex3.png)` }}></Parallax>
             </div>
             {/* Section Start */}

@@ -2,22 +2,22 @@ const serviceData1 = [
     {
         img: "https://via.placeholder.com/800x618",
         icon: "fas fa-arrow-right",
-        title: "FINANCE SERVICES",
-        content: "Lorem ipsum consectetur adipiscing elit do eiusmod tempor incididunt.",
+        title: "SHEET WORKS",
+        content: "With our expertise, elevate your temple with the perfect sheet works ",
         link: "/page/our-story"
     },
     {
         img: "https://via.placeholder.com/800x618",
         icon: "fas fa-arrow-right",
-        title: "BUSINESS PLANNING",
-        content: "Lorem ipsum consectetur adipiscing elit do eiusmod tempor incididunt.",
+        title: "TEMPLE TRANSFORMATION",
+        content: "Experience the magic of temple transformation with our services. ",
         link: "/page/our-story"
     },
     {
         img: "https://via.placeholder.com/800x618",
         icon: "fas fa-arrow-right",
-        title: "MARKETING STRATEGY",
-        content: "Lorem ipsum consectetur adipiscing elit do eiusmod tempor incididunt.",
+        title: "ACCESSORIES MAKING",
+        content: "We make accessories including simhasanam, vaaganam and radham",
         link: "/page/our-story"
     }
 ]

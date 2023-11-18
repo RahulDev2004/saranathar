@@ -114,7 +114,7 @@ const WhoWeArePage = (props) => {
         <div className="who-we-are" style={props.style}>
             {/* Header Start */}
             <Header topSpace={{ md: true }} type="reverse-scroll">
-            <HeaderNav theme="light" expand="lg" className="py-[0px] border-b !border-b-[#0000001a] lg:px-[15px] md:px-0" containerClass="sm:px-0">
+                <HeaderNav theme="light" expand="lg" className="py-[0px] border-b !border-b-[#0000001a] lg:px-[15px] md:px-0" containerClass="sm:px-0">
                     <Col className="col-auto col-sm-6 col-lg-2 me-auto ps-lg-0">
                         <Link aria-label="header logo" className="flex items-center" to="/">
                             <Navbar.Brand className="inline-block p-0 m-0">
@@ -152,8 +152,8 @@ const WhoWeArePage = (props) => {
                 <Container className="h-full relative xs:px-[15px]">
                     <Row className="justify-center h-full">
                         <Col xl={6} lg={7} md={8} className="relative font-serif text-center text-white flex justify-center flex-col">
-                            <h1 className="opacity-60 mb-[20px] text-xmd leading-[20px]">Our Services</h1>
-                            <h2 className="font-medium -tracking-[1px] mb-0">we are a creative design studio</h2>
+                            <h1 className="opacity-60 mb-[20px] text-xmd leading-[20px]">About Us</h1>
+                            <h2 className="font-medium -tracking-[1px] mb-0">Our Journey of Crafting</h2>
                         </Col>
                         <scrollTo to="about" offset={0} delay={0} spy={true} smooth={true} duration={800} className="absolute bottom-[50px] left-1/2 w-auto inline-block -translate-x-1/2 cursor-pointer">
                             <i className="ti-arrow-down text-lg leading-none text-white bg-[rgba(0,0,0,0.3)] p-[15px] xs:p-[10px] rounded-full flex justify-center items-center"></i>
@@ -172,63 +172,22 @@ const WhoWeArePage = (props) => {
                         </Col>
                         <Col lg={4} md={6} className="ps-lg-0 flex items-center sm:mb-[30px]">
                             <div className="justify-center h-full w-full flex flex-col items-start bg-[#C89965] px-[5.5rem] lg:px-[3rem] md:p-16">
-                                <span className="text-xlg lg:text-lg lg:leading-[26px] font-medium text-white mb-[20px] block">We started this company 10 years ago out of a desire to design and build amazing things.</span>
-                                <p className="text-white font-sans opacity-70 mb-[20px] xs:mb-[15px]">Lorem ipsum is simply dummy text of the printing and typeing industry. Lorem ipsum has been the industry's standard dummy text ever since text.</p>
+                                <span className="text-xlg lg:text-lg lg:leading-[26px] font-medium text-white mb-[20px] block">We have been experts in the industry for over 15 years</span>
+                                <p className="text-white font-sans opacity-70 mb-[20px] xs:mb-[15px]">With over 10 craftsman, each having excellent experience we became to best choice for sheet work in the industry</p>
                                 <Buttons href="/page/our-services" className="font-medium font-serif uppercase btn-link after:h-[2px] md:text-md md:mb-[15px] after:bg-[#fff] hover:text-[#fff]" color="#fff" title="Company overview" />
                             </div>
                         </Col>
                         <Col lg={4} md={6} className="flex flex-col pr-0">
                             <img src="/assets/img/gallery/about2.png" alt="about us" className="sm:w-full" />
                             <div className="bg-white px-[3.5rem] py-[3rem] h-full lg:p-8 sm:p-16">
-                                <span className="text-darkgray font-medium mb-[10px] block">About digital agency</span>
-                                <p className="font-sans">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text.</p>
+                                <span className="text-darkgray font-medium mb-[10px] block">About Past Works</span>
+                                <p className="font-sans">We have worked in 40 of the 108 divyadesam which inclued famous temples like tirupati. We have also left our mark on temples worldwide.</p>
                             </div>
                         </Col>
                     </Row>
                 </Container>
             </section>
             {/* section End */}
-
-            {/* Section Start */}
-            {/* <m.section className="pt-[130px] lg:pt-[90px] md:pt-[75px] xs:pt-[50px] overflow-hidden" {...fadeIn}>
-                <Container>
-                    <Row className="items-center">
-                        <Col xl={5} lg={6} className="pb-12 lg:pb-28 sm:pb-[50px]">
-                            <div className="text-xmd mb-[20px] font-serif">Browse amazing social media features</div>
-                            <h5 className="font-serif text-darkgray font-medium mb-[5.5rem]">We offer a full range of digital marketing services!</h5>
-                            <Row>
-                                <Col>
-                                    <div className="flex">
-                                        <div className="mr-[35px]">
-                                            <i className="line-icon-Idea-5 text-[50px] text-[#C89965]"></i>
-                                        </div>
-                                        <div className="feature-box-content ">
-                                            <span className="text-darkgray block mb-[10px] font-serif font-medium">Daily workshops</span>
-                                            <p className="w-[95%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                        </div>
-                                    </div>
-                                </Col>
-                                <Col className="col-12"><div className="h-[1px] bg-[#ededed] my-[40px] w-full xs:my-[30px]"></div></Col>
-                                <Col>
-                                    <div className="flex">
-                                        <div className="mr-[35px]">
-                                            <i className="line-icon-Medal-2 text-[50px] text-[#C89965]"></i>
-                                        </div>
-                                        <div className="feature-box-content ">
-                                            <span className="text-darkgray block mb-[10px] font-serif font-medium">Unlimited layouts and styles</span>
-                                            <p className="w-[95%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                        </div>
-                                    </div>
-                                </Col>
-                            </Row>
-                        </Col>
-                        <Col lg={6} xl={{ offset: 1 }} className="align-self-end text-center text-xl-start">
-                            <img className="md:mx-auto" loading="lazy" src="https://via.placeholder.com/504x666" width="504" height="666" alt="who-we-are" />
-                        </Col>
-                    </Row>
-                </Container>
-            </m.section> */}
-            {/* Section End */}
 
             {/* Section Start */}
             <section className="py-[130px] bg-[#F8F2EB] md:py-[90px] sm:py-[75px] xs:py-[50px] overflow-hidden">
@@ -271,36 +230,13 @@ const WhoWeArePage = (props) => {
             </section>
             {/* Section End */}
 
-
-            {/*Section Start */}
-            {/* <m.section className="py-[160px] lg:py-[120px] md:py-[95px] sm:py-[80px] xs:py-[50px] bg-[#EEE7DE]" {...fadeIn}>
-                <h6 className="font-serif text-gray-900 text-center font-medium mb-24 xs:mb-16"> Testimonials carousel style 02 </h6>
-                <Container>
-                    <Row>
-                        <TestimonialsCarousel02
-                            className="slider-nav-style-01 slider-nav-dark black-move"
-                            title="Proud"
-                            subtitle="stories"
-                            data={TestimonialsCarouselData2}
-                            carouselOption={{
-                                slidesPerView: 1,
-                                loop: true,
-                                navigation: true,
-                                autoplay: { delay: 2500, disableOnInteraction: false },
-                            }}
-                        />
-                    </Row>
-                </Container>
-            </m.section> */}
-            {/*Section End */}
-
             {/* Section start */}
             <m.section className="py-[160px] bg-[#f8f2eb] lg:py-[120px] md:py-[95px] sm:py-[80px] xs:py-[50px] overflow-hidden" {...fadeIn}>
                 <Container>
                     <Row className="justify-center text-center font-serif font-medium text-darkgray">
                         <Col xl={7} lg={8} md={10}>
-                            <span className="tracking-[2px] uppercase opacity-50 block mb-[30px] md:mb-[20px]">yoga enhances your life</span>
-                            <h2 className="-tracking-[2px] mb-[50px] md:mb-[40px] xs:w-[98%] xs:mx-auto">Yoga is the journey of the self through the self</h2>
+                            <span className="tracking-[2px] uppercase opacity-50 block mb-[30px] md:mb-[20px]">CRAFTING ELEGANCE!</span>
+                            <h2 className="-tracking-[2px] mb-[50px] md:mb-[40px] xs:w-[98%] xs:mx-auto">Contact Us to Elevate Your Temple's Aura Now</h2>
                             <Buttons ariaLabel="button link" href="#" className="font-medium font-serif tracking-[1px] uppercase rounded-sm !leading-[1.7]" themeColor={["#C89965", "#C89965"]} size="lg" color="#fff" title="Contact Us" />
                         </Col>
                     </Row>

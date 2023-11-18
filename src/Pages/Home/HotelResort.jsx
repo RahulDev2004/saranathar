@@ -367,7 +367,7 @@ const HotelResortPage = (props) => {
             <Col lg={7} md={8} xl={6} className="text-center mb-36 lg:mb-[7.5rem]">
               <span className="font-serif font-semibold text-[#c89965] uppercase text-md tracking-[1px] mb-[25px] block">Crafting Elegance!</span>
               <h2 className="heading-5 font-serif font-medium text-[#333045] -tracking-[1px] w-[95%] inline-block mb-[45px] xs:w-full">Contact Us to Elevate Your Temple's Aura Now</h2>
-              <Buttons aria-label="link for holiday" href="#" className="btn-fill font-medium font-serif rounded-none uppercase" themeColor="#333045" color="#fff" size="md" title="View Gallery" />
+              <Buttons aria-label="link for holiday" href="#" className="btn-fill font-medium font-serif rounded-none uppercase" themeColor="#333045" color="#fff" size="md" title="Contact us" />
             </Col>
           </m.div>
         </Container>
@@ -433,7 +433,7 @@ const HotelResortPage = (props) => {
             <Overlap>
               <Col className="relative lg:text-center">
                 <m.div className="bg-[#c89965] rounded-[6px] flex justify-between items-center md:flex-col py-[40px] px-28 lg-px-20 xs:px-10" {...fadeIn}>
-                  <h2 className="heading-6 font-serif font-medium text-[#333045] -tracking-[1px] mb-[0px] w-[45%] lg:w-1/2 md:w-full md:mb-[30px] xs:mb-[20px] text-left md:text-center">Sign up for exclusive hotel offers</h2>
+                  <h2 className="heading-6 font-serif font-medium text-[#333045] -tracking-[1px] mb-[0px] w-[45%] lg:w-1/2 md:w-full md:mb-[30px] xs:mb-[20px] text-left md:text-center">Sign up for more updates</h2>
                   <Formik
                     initialValues={{ email: '' }}
                     validationSchema={Yup.object().shape({ email: Yup.string().email("Invalid email.").required("Field is required."), })}

@@ -55,6 +55,26 @@ const ListData03 = [
     },
 ]
 
+const ListData09 = [
+    {
+        icon: "feather-check",
+        content: "40+ SUCCESS STORIES",
+    },
+    {
+        icon: "feather-check",
+        content: "GLOBAL PRESENCE",
+    },
+    {
+        icon: "feather-check",
+        content: "MASTERY OVER WORK",
+    },
+    {
+        icon: "feather-check",
+        content: "SEASONED ARTISANS",
+    },
+]
+
+
 const ListData04 = [
     {
         content: "Do I need a regular license or an extended license",
@@ -154,4 +174,4 @@ const ListData08 = [
     },
 ]
 
-export { ListData01, ListData02, ListData03, ListData04, ListData05, ListData06, ListData07, ListData08 }
+export { ListData01, ListData02, ListData03, ListData04, ListData05, ListData06, ListData07, ListData08, ListData09 }

@@ -79,7 +79,7 @@ const ContactUsModernPage = (props) => {
                         <Col className="p-0 sm:!px-[15px] sm:mb-[20px]">
                             <h1 className="text-xmd !leading-[20px] pl-[90px] pr-[15px] text-darkgray font-serif mb-0 relative sm:pl-[55px] md:mb-0 sm:mb-[20px]">
                                 <span className="h-[1px] absolute top-[12px] left-0 w-[70px] bg-black sm:w-[40px] sm:top-1/2"></span>
-                                Contact us modern
+                                Contact Us
                             </h1>
                         </Col>
                         <Col className="p-0 sm:!px-[15px]">
@@ -116,30 +116,6 @@ const ContactUsModernPage = (props) => {
                     </Row>
                 </Container>
             </section>
-            {/* Section End */}
-
-            {/* Section Start */}
-            {/* <m.section className="relative h-[700px] md:h-[550px] sm:h-[350px]" {...fadeIn}>
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2]">
-                    <Buttons to="#" rel="noreferrer" className="btn-fill w-auto z-[2] font-medium !tracking-normal font-serif uppercase rounded-none btn-shadow" size="xl" themeColor="#232323" color="#fff" title="litho design life" />
-                </div>
-                <Swiper
-                    modules={[Autoplay, EffectFade, Keyboard]}
-                    effect="fade"
-                    className="relative h-[700px] md:h-[550px] sm:h-[350px]"
-                    loop={true}
-                    keyboard={{ enabled: true, onlyInViewport: true }}
-                    autoplay={{ delay: 5000, disableOnInteraction: false }}
-                    fadeEffect={{ crossFade: true }}
-                    slidesPerView={1}>
-                    {
-                        SwiperImgData.map((item, i) => {
-                            return (
-                                <SwiperSlide key={i} className="h-full cover-background" style={{ backgroundImage: `url(${item.img})` }}></SwiperSlide>)
-                        })
-                    }
-                </Swiper>
-            </m.section> */}
             {/* Section End */}
 
             {/* Section Start */}
