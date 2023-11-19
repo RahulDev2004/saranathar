@@ -89,12 +89,6 @@ export const InputField = (value) => {
 }
 
 export const sendEmail = async (data) => {
-    const req = await fetch(`${process.env.REACT_APP_API_URL}/send`, {
-        method: 'post',
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data)
-    }).then(res => res.json()).then(data => data)
-    return await req
 }
 
 export const resetForm = (actions, recaptcha) => {
@@ -113,11 +107,11 @@ export const resetForm = (actions, recaptcha) => {
 
 // Header Menu Position
 export const SetHeaderMenuPos = () => {
-    
+
     function setMegaMenuPos() {
         let menu = document.querySelectorAll(".megamenu");
         if (menu.length > 0) {
-            
+
             menu.forEach(item => {
                 let menuWidth = item.clientWidth,
                     menuLeftPos = item.getBoundingClientRect().left;
@@ -131,7 +125,7 @@ export const SetHeaderMenuPos = () => {
 
     function setSimpleMenuPos() {
         let menu = document.querySelectorAll(".simple-dropdown-menu");
-        
+
         if (typeof (menu) != 'undefined' && menu != null) {
             menu.forEach(item => {
                 let pos = item.getBoundingClientRect().left,

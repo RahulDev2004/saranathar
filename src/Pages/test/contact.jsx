@@ -1,42 +1,19 @@
-import React, { useRef } from 'react'
+import React from 'react'
 
 // Libraries
 import { Col, Container, Navbar, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectFade, Keyboard } from "swiper";
-import { Formik, Form } from 'formik';
-import { AnimatePresence, m } from 'framer-motion';
+import { m } from 'framer-motion';
 
 // Components
-import { Header, HeaderCart, HeaderLanguage, HeaderNav, Menu, SearchBar } from "../../Components/Header/Header";
+import { Header, HeaderNav, Menu } from "../../Components/Header/Header";
 import Buttons from '../../Components/Button/Buttons'
-import { ContactFormStyle02Schema } from '../../Components/Form/FormSchema';
-import { Input, TextArea } from '../../Components/Form/Form'
-import MessageBox from '../../Components/MessageBox/MessageBox';
 import GoogleMap from '../../Components/GoogleMap/GoogleMap';
 import FooterStyle01 from '../../Components/Footers/FooterStyle01';
 import { fadeIn } from "../../Functions/GlobalAnimations";
-import ReCAPTCHA from 'react-google-recaptcha';
-import { sendEmail, resetForm } from "../../Functions/Utilities";
 import SideButtons from "../../Components/SideButtons";
 
-// Data
-const SwiperImgData = [
-    {
-        img: "https://via.placeholder.com/1920x730"
-    },
-    {
-        img: "https://via.placeholder.com/1920x730"
-    },
-    {
-        img: "https://via.placeholder.com/1920x730"
-    }
-]
-
 const ContactUsModernPage = (props) => {
-    const form = useRef(null)
-    const recaptcha = useRef()
 
     return (
         <div style={props.style}>
@@ -45,12 +22,12 @@ const ContactUsModernPage = (props) => {
                 <HeaderNav theme="light" expand="lg" className="py-[0px] border-b !border-b-[#0000001a] lg:px-[15px] md:px-0" containerClass="sm:px-0">
                     <Col className="col-auto col-sm-6 col-lg-2 me-auto ps-lg-0">
                         <Link aria-label="header logo" className="flex items-center" to="/">
-                        <Navbar.Brand className="inline-block p-0 m-0 ">
-                {/* <img className="default-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-yellow-ochre.webp' data-rjs='/assets/img/webp/logo-yellow-ochre@2x.webp' alt='logo' />
+                            <Navbar.Brand className="inline-block p-0 m-0 ">
+                                {/* <img className="default-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-yellow-ochre.webp' data-rjs='/assets/img/webp/logo-yellow-ochre@2x.webp' alt='logo' />
                 <img className="alt-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-yellow-ochre.webp' data-rjs='/assets/img/webp/logo-yellow-ochre@2x.webp' alt='logo' />
                 <img className="mobile-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-yellow-ochre.webp' data-rjs='/assets/img/webp/logo-yellow-ochre@2x.webp' alt='logo' /> */}
-                <p className='h-full font-serif font-bold items-center'>Saranathar Creations</p>
-              </Navbar.Brand>
+                                <p className='h-full font-serif font-bold items-center'>Saranathar Creations</p>
+                            </Navbar.Brand>
                         </Link>
                     </Col>
                     <div className="col-auto hidden order-last md:block">
@@ -142,44 +119,19 @@ const ContactUsModernPage = (props) => {
                             <h4 className="font-serif text-black font-semibold">Let's get in touch with us</h4>
                             <Row className="justify-center">
                                 <Col>
-                                    <Formik
-                                        initialValues={{ name: '', email: '', phone: '', comment: '', recaptcha: '' }}
-                                        validationSchema={ContactFormStyle02Schema}
-                                        onSubmit={async (values, actions) => {
-                                            actions.setSubmitting(true)
-                                            if (values.recaptcha !== '') {
-                                                const response = await sendEmail(values)
-                                                response.status === "success" && resetForm(actions, recaptcha);
-                                            } else {
-                                                recaptcha.current.captcha.classList.add("error")
-                                            }
-                                        }}
-                                    >
-                                        {({ isSubmitting, status, setFieldValue }) => (
-                                            <Form ref={form}>
-                                                <Input showErrorMsg={false} type="text" name="name" labelClass="mb-[25px]" className="pt-[20px] pr-[36px] pb-[20px] w-full bg-transparent border-b border-solid border-black text-[16px]" placeholder="Your name" />
-                                                <Input showErrorMsg={false} type="email" name="email" labelClass="mb-[25px]" className="pt-[20px] pr-[36px] pb-[20px] w-full bg-transparent border-b border-solid border-black text-[16px]" placeholder="Your email address" />
-                                                <Input showErrorMsg={false} type="tel" name="phone" labelClass="mb-[25px]" className="pt-[20px] pr-[36px] pb-[20px] w-full bg-transparent border-b border-solid border-black text-[16px]" placeholder="Mobile no" />
-                                                <TextArea
-                                                    className="py-[20px] pr-[36px] mb-[32px] w-full bg-transparent border-b border-solid border-black text-[16px] resize-none"
-                                                    name="comment"
-                                                    rows="6"
-                                                    placeholder="How can we help you?"></TextArea>
-                                                {process.env.REACT_APP_GRECAPTCHA_API_KEY && (
-                                                    <ReCAPTCHA
-                                                        ref={recaptcha}
-                                                        className="mb-[35px]"
-                                                        sitekey={process.env.REACT_APP_GRECAPTCHA_API_KEY}
-                                                        onChange={(response) => { setFieldValue("recaptcha", response) }}
-                                                    />
-                                                )}
-                                                <Buttons type="submit" className={`tracking-[0.5px] btn-fill rounded-none font-medium uppercase${isSubmitting ? " loading" : ""}`} themeColor="#C89965" size="md" color="#fff" title="Send Message" />
-                                                <AnimatePresence>
-                                                    {status && <div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}><MessageBox className="mt-[20px] py-[10px]" theme="message-box01" variant="success" message="Your message has been sent successfully!" /></div>}
-                                                </AnimatePresence>
-                                            </Form>
-                                        )}
-                                    </Formik>
+                                    <form action="https://formbold.com/s/67WAA" method="POST">
+                                        <input type="text" name="name" labelClass="mb-[25px]" className="pt-[20px] pr-[36px] pb-[20px] w-full bg-transparent border-b border-solid border-black text-[16px]" placeholder="Your name" />
+                                        <input type="email" name="email" labelClass="mb-[25px]" className="pt-[20px] pr-[36px] pb-[20px] w-full bg-transparent border-b border-solid border-black text-[16px]" placeholder="Your email address" />
+                                        <input type="tel" name="phone" labelClass="mb-[25px]" className="pt-[20px] pr-[36px] pb-[20px] w-full bg-transparent border-b border-solid border-black text-[16px]" placeholder="Mobile no" />
+                                        <textarea
+                                            className="py-[20px] pr-[36px] mb-[32px] w-full bg-transparent border-b border-solid border-black text-[16px] resize-none"
+                                            name="comment"
+                                            rows="6"
+                                            placeholder="How can we help you?"></textarea>
+
+                                        <Buttons id="form-submit" type="submit" className={`tracking-[0.5px] btn-fill rounded-none font-medium uppercase`} themeColor="#C89965" size="md" color="#fff" title="Send Message" />
+                                    </form>
+
                                 </Col>
                             </Row>
                         </Col>
