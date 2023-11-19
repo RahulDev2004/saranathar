@@ -83,7 +83,7 @@ const ContactUsModernPage = (props) => {
                             </h1>
                         </Col>
                         <Col className="p-0 sm:!px-[15px]">
-                            <h4 className="font-medium text-darkgray font-serif mb-0">We create brand new corporate identities</h4>
+                            <h4 className="font-medium text-darkgray font-serif mb-0">Connect with Us, Where Service and Craftsmanship Unite.</h4>
                         </Col>
                     </Row>
                 </Container>
@@ -100,17 +100,17 @@ const ContactUsModernPage = (props) => {
                         <Col className="col-12 col-lg-6 col-md-8">
                             <Row>
                                 <Col className="col-12 col-sm-6 xs:mb-[30px]">
-                                    <span className="font-serif block text-darkgray font-medium mb-[10px]">London</span>
-                                    <p className="w-[80%] mb-[5px] lg:w-[90%]">401 Broadway, 24th Floor, Orchard View, London, UK</p>
-                                    <span className="block mb-[10px]">Tel: 123 456 7890</span>
+                                    <span className="font-serif block text-darkgray font-medium mb-[10px]">Address</span>
+                                    <p className="w-[80%] mb-[5px] lg:w-[90%]">No 5, Thandhai Periyal Nagar, Aariyapadaiveedu, Kumbakonam - 612703</p>
+                                    <span className="block mb-[10px]">Tel: +91 12345 12345</span>
                                     <a href="https://www.google.com/maps?ll=-37.817214,144.955925&amp;z=16&amp;t=m&amp;hl=en-US&amp;gl=IN&amp;mapclient=embed&amp;cid=13153204942596594449" target="_blank" rel="noreferrer" className="uppercase text-sm text-darkgray font-medium border-b hover:border-fastblue border-black hover:text-fastblue">View on google map</a>
                                 </Col>
-                                <Col className="col-12 col-sm-6">
+                                {/* <Col className="col-12 col-sm-6">
                                     <span className="font-serif block text-darkgray font-medium mb-[10px]">France</span>
                                     <p className="w-[80%] mb-[5px] lg:w-[90%]">27 Eden Walk Eden Centre, Orchard View, Paris, France</p>
                                     <span className="block mb-[10px]">Tel: 123 456 7890</span>
                                     <a href="https://www.google.com/maps?ll=-37.817214,144.955925&amp;z=16&amp;t=m&amp;hl=en-US&amp;gl=IN&amp;mapclient=embed&amp;cid=13153204942596594449" target="_blank" rel="noreferrer" className="uppercase text-sm text-darkgray font-medium border-b hover:border-fastblue border-black hover:text-fastblue">View on google map</a>
-                                </Col>
+                                </Col> */}
                             </Row>
                         </Col>
                     </Row>
@@ -129,11 +129,12 @@ const ContactUsModernPage = (props) => {
                                         <img width="80" height="80" loading="lazy" className="rounded-full w-[80px] md:w-[105px] sm:w-[80px] xs:w-[50px]" src="https://via.placeholder.com/80x80" alt="" />
                                     </div>
                                     <div>
-                                        <div className="text-lg text-darkgray font-serif font-medium w-[90%] md:text-xmd md:leading-[22px] xs:w-full">More comfortable talking with us?</div>
+                                        <div className="text-lg text-darkgray font-serif font-medium w-[90%] md:text-xmd md:leading-[22px] xs:w-full">Feel more at ease chatting with us?</div>
                                     </div>
                                 </div>
-                                <p className="mt-[30px] mb-[15px] w-[80%] lg:w-full md:mb-[10px]">Schedule a 15 minute intro call with us. He'll answer your questions and discuss.</p>
-                                <a href="/page/contact-modern" rel="noreferrer" className="text-sm text-darkgray font-medium uppercase text-decoration-line-bottom before:bottom-[-5px]">Pick a schedule</a>
+                                <p className="mt-[30px] mb-[15px] w-[80%] lg:w-full md:mb-[10px]">Book a 15-minute introductory call with us. We're here to answer your questions and discuss your needs.</p>
+
+                                {/* <a href="/page/contact-modern" rel="noreferrer" className="text-sm text-darkgray font-medium uppercase text-decoration-line-bottom before:bottom-[-5px]">Pick a schedule</a> */}
                             </div>
                         </Col>
                         <Col className="col-12 col-lg-6 offset-lg-1 col-md-8">
@@ -201,7 +202,7 @@ const ContactUsModernPage = (props) => {
                         <m.div className="col col-12 col-sm-auto sm:mb-[15px]" {...{ ...fadeIn, transition: { delay: 0.2 } }}>
                             <div className="flex justify-center items-center px-[15px] h-full">
                                 <i className="feather-headphones align-middle text-lg text-gradient bg-gradient-to-r from-[#e42464] to-[#ff7357] mr-[10px]"></i>
-                                <span className="text-darkgray font-serif text-md">+1 123 456 7890</span>
+                                <span className="text-darkgray font-serif text-md">+91 12345 12345</span>
                             </div>
                         </m.div>
                         <m.div className="col col-12 col-sm-auto sm:mb-[15px]" {...{ ...fadeIn, transition: { delay: 0.4 } }}>

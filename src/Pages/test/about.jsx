@@ -48,41 +48,41 @@ const IconWithTextData_01 = [
 const IconWithTextData_02 = [
     {
         icon: "line-icon-Crown",
-        title: "Cutting edge solutions",
-        content: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum is simply dummy text printing and typesetting."
+        title: "Divine Precision",
+        content: "Immerse in our divine precision—every sheet a masterpiece crafted with meticulous attention and care."
     },
     {
         icon: "line-icon-Cube-Molecule",
-        title: "Fresh technology trends ",
-        content: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum is simply dummy text printing and typesetting."
+        title: "Beyond Boundaries",
+        content: "Experience craftsmanship that transcends boundaries, leaving an indelible mark on global temples."
     },
     {
         icon: "line-icon-Sand-watch2",
-        title: "Fresh technology trends",
-        content: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum is simply dummy text printing and typesetting."
+        title: "Sacred Innovation",
+        content: "Explore the sacred innovation we bring to metal artistry, seamlessly blending tradition with contemporary brilliance."
     },
     {
         icon: "line-icon-Gear-2",
-        title: "Advanced customization options",
-        content: "Lorem ipsum is simply dummy text of the printing typesetting lorem ipsum been text."
+        title: "Expertise Unveiled",
+        content: "Our expertise unveiled—trust in our skilled hands to transform your vision into divine reality."
     },
 ]
 
 const serviceData = [
     {
         img: "/assets/img/gallery/about3.png",
-        title: "Real time analytics",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        title: "Timely Craftsmanship",
+        content: "Excellent artistry delivered on time, echoing tales of devotion and punctuality."
     },
     {
         img: "/assets/img/gallery/about5.png",
-        title: "Google advertising",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        title: "Experienced Artisans",
+        content: "Encounter the best in craftsmanship, where experience meets divine inspiration."
     },
     {
         img: "/assets/img/gallery/about7.png",
-        title: "Pixel perfect design",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        title: "Skilled Masterpieces",
+        content: "Explore a legacy of skilled works, each masterpiece a testament to our artisanship."
     }
 ]
 

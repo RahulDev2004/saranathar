@@ -1,223 +1,53 @@
 const TeamData01 = [
     {
         img: '/assets/img/gallery/img24.png',
-        name: 'Alexander Harvard',
-        designation: 'CO FOUNDER',
-        social_links: [
-            {
-                title: 'facebook',
-                link: "https://www.facebook.com",
-                icon: "fab fa-facebook-f"
-            },
-            {
-                title: 'instagram',
-                link: "https://www.instagram.com",
-                icon: "fa-brands fa-instagram"
-            },
-            {
-                title: 'twitter',
-                link: "https://www.twitter.com",
-                icon: "fa-brands fa-twitter"
-            }
-        ]
+        // name: 'Alexander Harvard',
+        // designation: 'CO FOUNDER'
     },
     {
         img: '/assets/img/gallery/img81.png',
-        name: 'Bryan Jonhson',
-        designation: 'MANAGER',
-        social_links: [
-            {
-                title: 'facebook',
-                link: "https://www.facebook.com",
-                icon: "fab fa-facebook-f"
-            },
-            {
-                title: 'instagram',
-                link: "https://www.instagram.com",
-                icon: "fa-brands fa-instagram"
-            },
-            {
-                title: 'twitter',
-                link: "https://www.twitter.com",
-                icon: "fa-brands fa-twitter"
-            }
-        ]
+        // name: 'Bryan Jonhson',
+        // designation: 'MANAGER'
     },
     {
         img: '/assets/img/gallery/img91.png',
-        name: 'Jemmy Watson',
-        designation: 'DESIGNER',
-        social_links: [
-            {
-                title: 'facebook',
-                link: "https://www.facebook.com",
-                icon: "fab fa-facebook-f"
-            },
-            {
-                title: 'instagram',
-                link: "https://www.instagram.com",
-                icon: "fa-brands fa-instagram"
-            },
-            {
-                title: 'twitter',
-                link: "https://www.twitter.com",
-                icon: "fa-brands fa-twitter"
-            }
-        ]
+        // name: 'Jemmy Watson',
+        // designation: 'DESIGNER'
     },
     {
         img: '/assets/img/gallery/img101.png',
-        name: 'Jeremy Dupont',
-        designation: 'MANAGER',
-        social_links: [
-            {
-                title: 'facebook',
-                link: "https://www.facebook.com",
-                icon: "fab fa-facebook-f"
-            },
-            {
-                title: 'instagram',
-                link: "https://www.instagram.com",
-                icon: "fa-brands fa-instagram"
-            },
-            {
-                title: 'twitter',
-                link: "https://www.twitter.com",
-                icon: "fa-brands fa-twitter"
-            }
-        ]
+        // name: 'Jeremy Dupont',
+        // designation: 'MANAGER'
     },
     {
         img: '/assets/img/gallery/img111.png',
-        name: 'Jeremy Dupont',
-        designation: 'MANAGER',
-        social_links: [
-            {
-                title: 'facebook',
-                link: "https://www.facebook.com",
-                icon: "fab fa-facebook-f"
-            },
-            {
-                title: 'instagram',
-                link: "https://www.instagram.com",
-                icon: "fa-brands fa-instagram"
-            },
-            {
-                title: 'twitter',
-                link: "https://www.twitter.com",
-                icon: "fa-brands fa-twitter"
-            }
-        ]
+        // name: 'Jeremy Dupont',
+        // designation: 'MANAGER'
     },
     {
         img: '/assets/img/gallery/img132.png',
-        name: 'Jeremy Dupont',
-        designation: 'MANAGER',
-        social_links: [
-            {
-                title: 'facebook',
-                link: "https://www.facebook.com",
-                icon: "fab fa-facebook-f"
-            },
-            {
-                title: 'instagram',
-                link: "https://www.instagram.com",
-                icon: "fa-brands fa-instagram"
-            },
-            {
-                title: 'twitter',
-                link: "https://www.twitter.com",
-                icon: "fa-brands fa-twitter"
-            }
-        ]
+        // name: 'Jeremy Dupont',
+        // designation: 'MANAGER'
     },
     {
         img: '/assets/img/gallery/img141.png',
-        name: 'Jeremy Dupont',
-        designation: 'MANAGER',
-        social_links: [
-            {
-                title: 'facebook',
-                link: "https://www.facebook.com",
-                icon: "fab fa-facebook-f"
-            },
-            {
-                title: 'instagram',
-                link: "https://www.instagram.com",
-                icon: "fa-brands fa-instagram"
-            },
-            {
-                title: 'twitter',
-                link: "https://www.twitter.com",
-                icon: "fa-brands fa-twitter"
-            }
-        ]
+        // name: 'Jeremy Dupont',
+        // designation: 'MANAGER'
     },
     {
         img: '/assets/img/gallery/img1711.png',
-        name: 'Jeremy Dupont',
-        designation: 'MANAGER',
-        social_links: [
-            {
-                title: 'facebook',
-                link: "https://www.facebook.com",
-                icon: "fab fa-facebook-f"
-            },
-            {
-                title: 'instagram',
-                link: "https://www.instagram.com",
-                icon: "fa-brands fa-instagram"
-            },
-            {
-                title: 'twitter',
-                link: "https://www.twitter.com",
-                icon: "fa-brands fa-twitter"
-            }
-        ]
+        // name: 'Jeremy Dupont',
+        // designation: 'MANAGER'
     },
     {
         img: '/assets/img/gallery/img211.png',
-        name: 'Jeremy Dupont',
-        designation: 'MANAGER',
-        social_links: [
-            {
-                title: 'facebook',
-                link: "https://www.facebook.com",
-                icon: "fab fa-facebook-f"
-            },
-            {
-                title: 'instagram',
-                link: "https://www.instagram.com",
-                icon: "fa-brands fa-instagram"
-            },
-            {
-                title: 'twitter',
-                link: "https://www.twitter.com",
-                icon: "fa-brands fa-twitter"
-            }
-        ]
+        // name: 'Jeremy Dupont',
+        // designation: 'MANAGER'
     },
     {
         img: '/assets/img/gallery/img232.png',
-        name: 'Jeremy Dupont',
-        designation: 'MANAGER',
-        social_links: [
-            {
-                title: 'facebook',
-                link: "https://www.facebook.com",
-                icon: "fab fa-facebook-f"
-            },
-            {
-                title: 'instagram',
-                link: "https://www.instagram.com",
-                icon: "fa-brands fa-instagram"
-            },
-            {
-                title: 'twitter',
-                link: "https://www.twitter.com",
-                icon: "fa-brands fa-twitter"
-            }
-        ]
+        // name: 'Jeremy Dupont',
+        // designation: 'MANAGER'
     }
 ]
 

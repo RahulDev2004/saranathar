@@ -9,53 +9,45 @@ import { Link as ScrollTo } from "react-scroll"
 
 // Components
 import { Header, HeaderCart, HeaderLanguage, HeaderNav, Menu, SearchBar } from "../../Components/Header/Header";
-import { fadeIn, fadeInLeft } from '../../Functions/GlobalAnimations';
-import { TextAnime } from '../../Components/FancyText/FancyText';
-import Piechart from '../../Components/PieChart/Piechart'
+import { fadeIn } from '../../Functions/GlobalAnimations';
 import Buttons from '../../Components/Button/Buttons'
 import Tab01 from '../../Components/Tab/Tab01'
 import Counter from '../../Components/Counters/Counter'
-import Lists from '../../Components/Lists/Lists';
 import Team from '../../Components/Team/Team';
-import Overlap from '../../Components/Overlap/Overlap';
 import FooterStyle01 from '../../Components/Footers/FooterStyle01';
-import CustomModal from '../../Components/CustomModal'
 import SideButtons from "../../Components/SideButtons";
 // Data
 import { CounterData01 } from '../../Components/Counters/CounterData';
-import { ListData01 } from '../../Components/Lists/ListsData';
-import { PiechartData1 } from '../../Components/PieChart/PieChartData'
 import { TeamData02, TeamData01 } from '../../Components/Team/TeamData';
 
-const IconWithText = lazy(() => import('../../Components/IconWithText/IconWithText'))
 
 const TabData = [
   {
-    tabTitle: '01. STATUE WORK',
-    subtitle: ' Unlimited power customization',
-    title: 'We created digital ideas that are bigger and bolder',
-    img: '/assets/img/gallery/statuework.png',
-    content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna ut enim ad minim veniam nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    buttonTitle: "Discover Litho",
-    buttonLink: "#"
-  },
-  {
-    tabTitle: '02. GOLD WORK',
-    subtitle: 'Powerful theme for creative designer',
-    title: 'We are expert in search engine and social media',
-    img: '/assets/img/gallery/goldwork.png',
-    content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna ut enim ad minim veniam nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    buttonTitle: "Discover Litho",
-    buttonLink: "#",
-  },
-  {
-    tabTitle: '03. SHEET WORK',
-    subtitle: 'Unlimited power customization',
-    title: 'We offer a full range of digital marketing services',
+    tabTitle: '01. SHEET WORK',
+    subtitle: 'Our Sheet Work',
+    title: 'We are experts of sheet work',
     img: '/assets/img/gallery/sheetwork.png',
-    content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna ut enim ad minim veniam nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    buttonTitle: "Discover Litho",
+    content: 'We create a wide range of services in sheet works. We make various products ranging from statues to doorsteps. ',
+    buttonTitle: "Contact Us",
     buttonLink: "#"
+  },
+  {
+    tabTitle: '02. STATUE WORK',
+    subtitle: 'Our Statue Works',
+    title: 'We make brilliant statue works',
+    img: '/assets/img/gallery/statuework.png',
+    content: 'We are experiences professionals in statue works. With years of experience in the field of statue works, we make the perfect statue works for all your needs',
+    buttonTitle: "Contact Us",
+    buttonLink: "#"
+  },
+  {
+    tabTitle: '03. GOLD WORK',
+    subtitle: 'Our Gold Works ',
+    title: 'Experience the brilliance of gold work',
+    img: '/assets/img/gallery/goldwork.png',
+    content: 'We have experienced professional in Gold Works. With over a decade of experience in gold work, all the works that we make become masterpieces',
+    buttonTitle: "Contact Us",
+    buttonLink: "#",
   }
 ]
 
@@ -98,33 +90,33 @@ const Gallery = (props) => {
     <div style={props.style}>
       {/* Header Start */}
       <Header topSpace={{ md: true }} type="reverse-scroll">
-      <HeaderNav theme="light" expand="lg" className="py-[0px] border-b !border-b-[#0000001a] lg:px-[15px] md:px-0" containerClass="sm:px-0">
-                    <Col className="col-auto col-sm-6 col-lg-2 me-auto ps-lg-0">
-                        <Link aria-label="header logo" className="flex items-center" to="/">
-                            <Navbar.Brand className="inline-block p-0 m-0">
-                                <img className="default-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-black.webp' data-rjs='/assets/img/webp/logo-black@2x.webp' alt='logo' />
-                                <img className="alt-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-fast-blue-black.webp' data-rjs='/assets/img/webp/logo-fast-blue-black@2x.webp' alt='logo' />
-                                <img className="mobile-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-fast-blue-black.webp' data-rjs='/assets/img/webp/logo-fast-blue-black@2x.webp' alt='logo' />
-                            </Navbar.Brand>
-                        </Link>
-                    </Col>
-                    <div className="col-auto hidden order-last md:block">
-                        <Navbar.Toggle className="md:ml-[10px] sm:ml-0">
-                            <span className="navbar-toggler-line"></span>
-                            <span className="navbar-toggler-line"></span>
-                            <span className="navbar-toggler-line"></span>
-                            <span className="navbar-toggler-line"></span>
-                        </Navbar.Toggle>
-                    </div>
-                    <Navbar.Collapse className="col-auto px-0 justify-end">
-                        <Menu {...props} />
-                    </Navbar.Collapse>
-                    <Col className="col-auto text-right pe-0">
-                        <SearchBar className="pr-0 xs:pl-[15px]" />
-                        <HeaderLanguage className="xs:pl-[15px]" />
-                        <HeaderCart className="xs:pl-[15px]" style={{ "--base-color": "#0038e3" }} />
-                    </Col>
-                </HeaderNav>
+        <HeaderNav theme="light" expand="lg" className="py-[0px] border-b !border-b-[#0000001a] lg:px-[15px] md:px-0" containerClass="sm:px-0">
+          <Col className="col-auto col-sm-6 col-lg-2 me-auto ps-lg-0">
+            <Link aria-label="header logo" className="flex items-center" to="/">
+              <Navbar.Brand className="inline-block p-0 m-0">
+                <img className="default-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-black.webp' data-rjs='/assets/img/webp/logo-black@2x.webp' alt='logo' />
+                <img className="alt-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-fast-blue-black.webp' data-rjs='/assets/img/webp/logo-fast-blue-black@2x.webp' alt='logo' />
+                <img className="mobile-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-fast-blue-black.webp' data-rjs='/assets/img/webp/logo-fast-blue-black@2x.webp' alt='logo' />
+              </Navbar.Brand>
+            </Link>
+          </Col>
+          <div className="col-auto hidden order-last md:block">
+            <Navbar.Toggle className="md:ml-[10px] sm:ml-0">
+              <span className="navbar-toggler-line"></span>
+              <span className="navbar-toggler-line"></span>
+              <span className="navbar-toggler-line"></span>
+              <span className="navbar-toggler-line"></span>
+            </Navbar.Toggle>
+          </div>
+          <Navbar.Collapse className="col-auto px-0 justify-end">
+            <Menu {...props} />
+          </Navbar.Collapse>
+          <Col className="col-auto text-right pe-0">
+            <SearchBar className="pr-0 xs:pl-[15px]" />
+            <HeaderLanguage className="xs:pl-[15px]" />
+            <HeaderCart className="xs:pl-[15px]" style={{ "--base-color": "#0038e3" }} />
+          </Col>
+        </HeaderNav>
       </Header>
       {/* Header End */}
       <SideButtons />
@@ -135,8 +127,8 @@ const Gallery = (props) => {
         <Container className="h-full relative xs:px-[15px]">
           <Row className="justify-center h-full">
             <Col xl={6} lg={7} md={8} className="relative font-serif text-center text-white flex justify-center flex-col">
-              <h1 className="opacity-60 mb-[20px] text-xmd leading-[20px]">What we offers</h1>
-              <h2 className="font-medium -tracking-[1px] mb-0">Our Gallery</h2>
+              <h1 className="opacity-60 mb-[20px] text-xmd leading-[20px]">Our Works</h1>
+              <h2 className="font-medium -tracking-[1px] mb-0">Explore Our Masterpieces</h2>
             </Col>
             <ScrollTo to="about" offset={0} delay={0} spy={true} smooth={true} duration={800} className="absolute bottom-[50px] left-1/2 w-auto inline-block -translate-x-1/2 cursor-pointer">
               <i className="ti-arrow-down text-lg leading-none text-white bg-[rgba(0,0,0,0.7)] p-[15px] xs:p-[10px] rounded-full flex justify-center items-center"></i>
@@ -152,25 +144,13 @@ const Gallery = (props) => {
           <Row className="items-center">
             <Col md={6} className="relative sm:mb-[30px]">
               <img src="https://via.placeholder.com/800x553" className="rounded-[5px] w-full" height="564" width="390" alt="what-we-offers" />
-              {/* Modal Component Start */}
-              <CustomModal.Wrapper
-                className="absolute top-0 left-0 w-full h-full flex items-center justify-center"
-                modalBtn={<Buttons type="submit" className="btn-sonar border-0" themeColor={["#b27cfd", "#ff9393"]} color="#fff" size="lg" title={<i className="icon-control-play" />} />} >
-                <div className="w-[1020px] max-w-full relative rounded mx-auto">
-                  <div className="fit-video">
-                    <iframe width="100%" height="100%" className="shadow-[0_0_8px_rgba(0,0,0,0.06)]" controls src="https://www.youtube.com/embed/g0f_BRYJLJE?autoplay=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen ></iframe>
-                  </div>
-                </div>
-              </CustomModal.Wrapper>
-              {/* Modal Component End */}
-
             </Col>
             <Col lg={{ span: 5, offset: 1 }} md={6} >
-              <h5 className="font-serif font-medium text-darkgray w-[90%]">Litho is meant to simplify the website building</h5>
-              <p className="w-[85%] mb-[25px] lg:w-[90%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h5 className="font-serif font-medium text-darkgray w-[90%]">Journey Through Divine Artistry</h5>
+              <p className="w-[85%] mb-[25px] lg:w-[90%]">Explore our gallery, where every image tells a story of craftsmanship, devotion, and timeless beauty.</p>
               <div className="mt-[15px] sm:mt-0 inline-block">
-                <Buttons to="/page/who-we-are" className="mr-[24px] font-medium rounded-none font-serif uppercase hover:text-darkgray btn-slide-filling-right bg-gradient-to-r from-darkgray to-darkgray sm:mr-[20px] xs:mr-[8px]" size="md" color="#fff" themeColor="#fff" title="Discover Litho" />
-                <Buttons to="/page/about-us" className="font-medium rounded-none font-serif uppercase hover:text-white bg-transparent btn-slide-right" size="md" color="#232323" themeColor="#232323" title="Read more" />
+                <Buttons to="/page/who-we-are" className="mr-[24px] font-medium rounded-none font-serif uppercase hover:text-darkgray btn-slide-filling-right bg-gradient-to-r from-darkgray to-darkgray sm:mr-[20px] xs:mr-[8px]" size="md" color="#fff" themeColor="#fff" title="Contact Us" />
+                <Buttons to="/page/about-us" className="font-medium rounded-none font-serif uppercase hover:text-white bg-transparent btn-slide-right" size="md" color="#232323" themeColor="#232323" title="View Gallery" />
               </div>
             </Col>
           </Row>
@@ -179,24 +159,11 @@ const Gallery = (props) => {
       {/* Section End */}
 
       {/* Section Start */}
-      {/* <section className="py-[130px] lg:py-[95px] md:py-[75px] sm:py-[50px] xs:px-[15px] bg-lightgray">
-        <Container>
-          <IconWithText
-            grid="row-cols-1 row-cols-lg-3 row-cols-sm-2"
-            theme="icon-with-text-10"
-            data={IconWithTextData}
-            animation={fadeIn}
-            animationDelay={0.1} />
-        </Container>
-      </section> */}
-      {/* Section End */}
-
-      {/* Section Start */}
       <m.section className="bg-[#f8f2eb] py-[130px] lg:py-[95px] md:py-[75px] sm:py-[50px] overflow-hidden" {...fadeIn}>
         <Container>
           <Row className="items-center">
             <Col md={5} className="sm:mb-[30px]">
-              <h5 className="font-serif font-medium text-darkgray mb-0">We design brand, digital experience that engaged the right customers</h5>
+              <h5 className="font-serif font-medium text-darkgray mb-0">Gallery in Numbers</h5>
             </Col>
             <Col lg={{ span: 6, offset: 1 }} md={7}>
               <Counter
@@ -221,67 +188,28 @@ const Gallery = (props) => {
       </m.section>
       {/* Section End */}
 
-      {/* Section Start */}
-      {/* <section className="py-[130px] lg:py-[95px] md:py-[75px] sm:py-[50px] bg-lightgray overflow-hidden">
-        <Container>
-          <Row className="items-center">
-            <m.div className="md:mb-[50px] sm:mb-[30px] col-xl-4 col-lg-6 offset-xl-2 order-lg-2" {...{ ...fadeInLeft, transition: { delay: 0.5, ease: "circOut", duration: 0.6 } }}>
-              <div className="-mr-[30vw] md:mr-0">
-                <img src="/assets/img/webp/what-we-offers-03.webp" className="shadow-md rounded-[5px] overflow-hidden w-full" height="945" width="605.17" alt="what-we-offers" />
-              </div>
-            </m.div>
-            <m.div className="pr-[5%] sm:pr-[15px] col-xl-5 col-lg-6 order-lg-1" {...fadeIn}>
-              <h5 className="font-serif font-medium text-darkgray leading-[40px] mb-[40px]">
-                <span className="initial p-0">We design brand, digital experience that engage the </span>
-                <TextAnime duration={3000} color={["#b783ff", "#fa7cc1", "#ff9393"]} lineColor="#5971ff" className="text-left fancy-border-bottom !font-semibold text-darkgray" animation="slide" data={["right customers", "premium customers", "superior customers"]} />
-              </h5>
-              <p className="mb-[25px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <Lists theme="list-style-01" className="" data={ListData01} animation={fadeIn} />
-            </m.div>
-          </Row>
-        </Container>
-      </section> */}
-      {/* Section End */}
-
-      {/* Section Start */}
-      {/* <section className="py-[130px] lg:py-[95px] md:py-[75px] sm:py-[50px] overflow-hidden">
-        <Container>
-          <Piechart
-            className="text-center"
-            grid="row-cols-1 row-cols-md-3 row-cols-sm-2 justify-center gap-y-10"
-            theme="piechart-style-01"
-            data={PiechartData1}
-            pathColor={['#be85f5', '#fc9297']}
-            trailColor="#f5f5f5"
-            pathWidth={7}
-            trailWidth={7}
-            textStyle={{ fontSize: "32px", fill: "#232323" }}
-          />
-        </Container>
-      </section> */}
-      {/* Section End */}
       <Container className="pt-[160px] lg:pt-[120px] md:pt-[95px] sm:pt-[80px] xs:pt-[50px]">
-          <Row className="justify-center ">
-            <Col md={6} className="text-center mb-10">
-              <span className="font-serif mb-[5px] inline-block uppercase font-medium text-spanishgray">Meet our team</span>
-              <h5 className="font-serif text-darkgray font-medium">Creative People</h5>
-            </Col>
-          </Row>
-          <Row>
+        <Row className="justify-center ">
+          <Col md={6} className="text-center mb-10">
+            <span className="font-serif mb-[5px] inline-block uppercase font-medium text-spanishgray">Our Works</span>
+            <h5 className="font-serif text-darkgray font-medium">Explore Our Masterpieces</h5>
+          </Col>
+        </Row>
+        <Row>
           <section className="pb-[160px] lg:pb-[120px] md:pb-[95px] sm:pb-[80px] xs:pb-[50px]">
-        <Container>
-          <Team
-            themeColor="dark"
-            theme='team-style-01'
-            color={["#556fffcc", "#b263e4cc", "#e05fc4cc", "#f767a6cc", "#ff798ecc"]}
-            data={TeamData01}
-            animation={fadeIn}
-            carousel={true}
-            carouselOption={{ slidesPerView: 1, spaceBetween: 30, loop: true, navigation: false, autoplay: { delay: 3000, disableOnInteraction: false }, pagination: { dynamicBullets: true, clickable: true }, breakpoints: { 1200: { slidesPerView: 4 }, 992: { slidesPerView: 3 }, 768: { slidesPerView: 2 } } }} />
-        </Container>
-      </section>
-          </Row>
-        </Container>
+            <Container>
+              <Team
+                themeColor="dark"
+                theme='team-style-01'
+                color={["#556fffcc", "#b263e4cc", "#e05fc4cc", "#f767a6cc", "#ff798ecc"]}
+                data={TeamData01}
+                animation={fadeIn}
+                carousel={true}
+                carouselOption={{ slidesPerView: 1, spaceBetween: 30, loop: true, navigation: false, autoplay: { delay: 3000, disableOnInteraction: false }, pagination: { dynamicBullets: true, clickable: true }, breakpoints: { 1200: { slidesPerView: 4 }, 992: { slidesPerView: 3 }, 768: { slidesPerView: 2 } } }} />
+            </Container>
+          </section>
+        </Row>
+      </Container>
       {/* Parallax Scrolling Start */}
       <div className="h-[600px] md:h-[450px] sm:h-[350px] bg-top overflow-hidden relative">
         <Parallax className="lg-no-parallax bg-cover cover-background absolute top-[0px] left-0 md:-top-[30px] w-full h-[100vh]" translateY={[-50, 50]} style={{ backgroundImage: `url(https://via.placeholder.com/1920x1100)` }}></Parallax>
@@ -290,35 +218,7 @@ const Gallery = (props) => {
 
       {/* Section Start */}
       <m.section className="pb-[130px] lg:pb-[95px] md:pb-[75px] sm:py-[50px]" {...fadeIn}>
-        <Container className="mb-[130px] lg:mb-[95px] md:mb-[75px] sm:mb-[50px]">
-          <Overlap className="relative shadow-[0_0_15px_rgba(0,0,0,0.1)] rounded-[5px] bg-white py-[60px] md:p-[40px] xs:px-[20px]">
-            <Row className="g-0 sm:justify-center">
-              <Col lg={{ span: 5, offset: 1 }} md={7} sm={10} className="text-start sm:mb-[20px]">
-                <h6 className="font-serif font-medium text-darkgray w-[70%] sm:text-center mb-0 lg:w-full">Litho is meant to simplify the website building</h6>
-              </Col>
-              <Col lg={{ span: 4, offset: 2 }} md={5} sm={8} className="text-center flex justify-center items-center md:text-start">
-
-                {/* Modal Component Start */}
-                <CustomModal.Wrapper
-                  modalBtn={
-                    <div className="flex items-center">
-                      <Buttons type="submit" className="mr-[20px] btn-sonar border-0 inline-block" themeColor={["#b27cfd", "#ff9393"]} color="#fff" size="md" title={<i className="icon-control-play" />} />
-                      <span className="font-serif text-darkgray text-xmd font-medium text-decoration-line-bottom cursor-pointer hover:text-fastblue">Discover collection</span>
-                    </div>
-                  }
-                >
-                  <div className="w-[1020px] max-w-full relative rounded mx-auto">
-                    <div className="fit-video">
-                      <iframe width="100%" height="100%" className="shadow-[0_0_8px_rgba(0,0,0,0.06)]" controls src="https://www.youtube.com/embed/g0f_BRYJLJE?autoplay=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen ></iframe>
-                    </div>
-                  </div>
-                </CustomModal.Wrapper>
-                {/* Modal Component End */}
-              </Col>
-            </Row>
-          </Overlap>
-        </Container>
-        <Container>
+        <Container className='mt-[60px]'>
           <Row className="justify-center">
             <Col md={6} className="text-center mb-10">
               <span className="font-serif mb-[5px] inline-block uppercase font-medium text-spanishgray">Meet our team</span>
@@ -345,8 +245,8 @@ const Gallery = (props) => {
 
 
 
-    
-      
+
+
 
       {/* Section Start */}
       <FooterStyle01 theme="dark" className="bg-[#262b35] text-slateblue overflow-visible" />

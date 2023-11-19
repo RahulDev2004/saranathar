@@ -1,20 +1,20 @@
 const CounterData01 = [
     {
-        number:{
-            text: "2530",
+        number: {
+            text: "50",
         },
-        title: "Custom shortcodes",
-        content: "Lorem ipsum is simply dummy text the printing typesetting",
+        title: "Masterpieces Crafted",
+        content: "Every project is a testament to our commitment to excellence.",
     },
     {
-        number:{
-            text: "2000",
+        number: {
+            text: "15",
         },
-        title: "Completed projects",
-        content: "Lorem ipsum is simply dummy text the printing typesetting",
+        title: "Artisan Expertise",
+        content: "Infusing each creation with unparalleled skill and mastery.",
     },
     {
-        number:{
+        number: {
             text: "1958",
         },
         title: "Working hours",
@@ -24,28 +24,28 @@ const CounterData01 = [
 
 const CounterData02 = [
     {
-        number:{
+        number: {
             text: "2500",
         },
         title: "WORKING",
         content: "HOURS",
     },
     {
-        number:{
+        number: {
             text: "3250",
         },
         title: "PHOTO",
         content: "CAPTURE",
     },
     {
-        number:{
+        number: {
             text: "2800",
         },
         title: "WORK",
         content: "COMPLETED",
     },
     {
-        number:{
+        number: {
             text: "2750",
         },
         title: "TELEPHONIC",
@@ -55,84 +55,84 @@ const CounterData02 = [
 
 const CounterData03 = [
     {
-        number:{
+        number: {
             text: "24",
         },
-        title:"COUNTRIES",
+        title: "COUNTRIES",
     },
     {
-        number:{
+        number: {
             text: "28",
         },
-        title:"LANGUAGES",
+        title: "LANGUAGES",
     },
     {
-        number:{
+        number: {
             text: "72",
         },
-        title:"CHANNELS",
+        title: "CHANNELS",
     },
     {
-        number:{
+        number: {
             text: "92",
         },
-        title:"BRANDS",
+        title: "BRANDS",
     },
 ]
 
 const CounterData04 = [
     {
-        number:{
+        number: {
             text: "220",
         },
-        title:"PEOPLE",
+        title: "PEOPLE",
     },
     {
-        number:{
+        number: {
             text: "380",
         },
-        title:"PROJECTS",
+        title: "PROJECTS",
     },
     {
-        number:{
+        number: {
             text: "700",
         },
-        title:"CHANNELS",
+        title: "CHANNELS",
     },
     {
-        number:{
+        number: {
             text: "240",
         },
-        title:"BRANDS",
+        title: "BRANDS",
     },
 ]
 
 const CounterData05 = [
     {
-        number:{
+        number: {
             text: "1227",
             class: "text-gradient bg-gradient-to-r from-[#556fff] to-[#e66176] inline-block"
         },
-        title:"Winning awards",
-        content:"For creative design",
+        title: "Winning awards",
+        content: "For creative design",
     },
     {
-        number:{
+        number: {
             text: "1947",
             class: "text-gradient bg-gradient-to-r from-[#556fff] to-[#e66176] inline-block"
         },
-        title:"Working hours",
-        content:"Desperate for work",
+        title: "Working hours",
+        content: "Desperate for work",
     },
     {
-        number:{
+        number: {
             text: "1587",
             class: "text-gradient bg-gradient-to-r from-[#556fff] to-[#e66176] inline-block"
         },
-        title:"Happy clients",
-        content:"We love clients",
+        title: "Happy clients",
+        content: "We love clients",
     },
 ]
 
 
-export {CounterData01,CounterData02,CounterData03,CounterData04,CounterData05}
+export { CounterData01, CounterData02, CounterData03, CounterData04, CounterData05 }
