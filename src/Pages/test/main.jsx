@@ -81,11 +81,11 @@ const iconData = [
 
 const swiperData = [
   {
-    bgimg: "/assets/img/home/Heroimg2.webp",
+    bgimg: "/assets/img/home/heroimg2.webp",
     img: "Saranathar Creations"
   },
   {
-    bgimg: "/assets/img/home/Heroimg3.webp",
+    bgimg: "/assets/img/home/heroimg3.webp",
     img: "Divine Craftsmanship"
   },
   {
