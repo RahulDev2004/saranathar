@@ -12,8 +12,8 @@ import GlobalContext from "./Context/Context";
 import ScrollToTopButton from "./Components/ScrollToTop"
 
 // Pages
-const HotelResortPage = lazy(() => import("./Pages/Home/HotelResort"))
-const WhatWeOfferPage = lazy(() => import("./Pages/Services/WhatWeOfferPage"))
+const HotelResortPage = lazy(() => import("./Pages/test/main"))
+const Gallery = lazy(() => import("./Pages/test/gallery"))
 const NotFoundPage = lazy(() => import("./Pages/404"))
 const Services = lazy(() => import("./Pages/test/services"))
 const About = lazy(() => import("./Pages/test/about"))
@@ -91,7 +91,7 @@ function App() {
                   <Route path="services" element={<Services />} />
                   <Route path="about" element={<About />} />
                   <Route path="contact" element={<Contact />} />
-                  <Route path="gallery" element={<WhatWeOfferPage />} />
+                  <Route path="gallery" element={<Gallery />} />
                   <Route path="/" element={<HotelResortPage />} />
                   <Route path="*" element={<NotFoundPage />} />
                 </Routes>
