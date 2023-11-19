@@ -1,51 +1,51 @@
 const TeamData01 = [
     {
-        img: '/assets/img/gallery/img24.png',
+        img: '/assets/img/gallery/carousel1.webp',
         // name: 'Alexander Harvard',
         // designation: 'CO FOUNDER'
     },
     {
-        img: '/assets/img/gallery/img81.png',
+        img: '/assets/img/gallery/carousel2.webp',
         // name: 'Bryan Jonhson',
         // designation: 'MANAGER'
     },
     {
-        img: '/assets/img/gallery/img91.png',
+        img: '/assets/img/gallery/carousel3.webp',
         // name: 'Jemmy Watson',
         // designation: 'DESIGNER'
     },
     {
-        img: '/assets/img/gallery/img101.png',
+        img: '/assets/img/gallery/carousel4.webp',
         // name: 'Jeremy Dupont',
         // designation: 'MANAGER'
     },
     {
-        img: '/assets/img/gallery/img111.png',
+        img: '/assets/img/gallery/carousel5.webp',
         // name: 'Jeremy Dupont',
         // designation: 'MANAGER'
     },
     {
-        img: '/assets/img/gallery/img132.png',
+        img: '/assets/img/gallery/carousel6.webp',
         // name: 'Jeremy Dupont',
         // designation: 'MANAGER'
     },
     {
-        img: '/assets/img/gallery/img141.png',
+        img: '/assets/img/gallery/carousel7.webp',
         // name: 'Jeremy Dupont',
         // designation: 'MANAGER'
     },
     {
-        img: '/assets/img/gallery/img1711.png',
+        img: '/assets/img/gallery/carousel8.webp',
         // name: 'Jeremy Dupont',
         // designation: 'MANAGER'
     },
     {
-        img: '/assets/img/gallery/img211.png',
+        img: '/assets/img/gallery/carousel9.webp',
         // name: 'Jeremy Dupont',
         // designation: 'MANAGER'
     },
     {
-        img: '/assets/img/gallery/img232.png',
+        img: '/assets/img/gallery/carousel10.webp',
         // name: 'Jeremy Dupont',
         // designation: 'MANAGER'
     }
@@ -53,22 +53,22 @@ const TeamData01 = [
 
 const TeamData02 = [
     {
-        img: '/assets/img/gallery/img23.png',
+        img: '/assets/img/gallery/gallery1.webp',
     },
     {
-        img: '/assets/img/gallery/img3.png',
+        img: '/assets/img/gallery/gallery2.webp',
     },
     {
-        img: '/assets/img/gallery/img4.png',
+        img: '/assets/img/gallery/gallery3.webp',
     },
     {
-        img: '/assets/img/gallery/img7.png',
+        img: '/assets/img/gallery/gallery4.webp',
     },
     {
-        img: '/assets/img/gallery/img22.png',
+        img: '/assets/img/gallery/gallery5.webp',
     },
     {
-        img: '/assets/img/gallery/img171.png',
+        img: '/assets/img/gallery/gallery6.webp',
     }
 ]
 

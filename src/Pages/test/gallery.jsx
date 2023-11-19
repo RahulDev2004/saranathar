@@ -27,7 +27,7 @@ const TabData = [
     tabTitle: '01. SHEET WORK',
     subtitle: 'Our Sheet Work',
     title: 'We are experts of sheet work',
-    img: '/assets/img/gallery/sheetwork.png',
+    img: '/assets/img/gallery/sheetwork.webp',
     content: 'We create a wide range of services in sheet works. We make various products ranging from statues to doorsteps. ',
     buttonTitle: "Contact Us",
     buttonLink: "#"
@@ -36,7 +36,7 @@ const TabData = [
     tabTitle: '02. STATUE WORK',
     subtitle: 'Our Statue Works',
     title: 'We make brilliant statue works',
-    img: '/assets/img/gallery/statuework.png',
+    img: '/assets/img/gallery/statuework.webp',
     content: 'We are experiences professionals in statue works. With years of experience in the field of statue works, we make the perfect statue works for all your needs',
     buttonTitle: "Contact Us",
     buttonLink: "#"
@@ -45,7 +45,7 @@ const TabData = [
     tabTitle: '03. GOLD WORK',
     subtitle: 'Our Gold Works ',
     title: 'Experience the brilliance of gold work',
-    img: '/assets/img/gallery/goldwork.png',
+    img: '/assets/img/gallery/goldwork.webp',
     content: 'We have experienced professional in Gold Works. With over a decade of experience in gold work, all the works that we make become masterpieces',
     buttonTitle: "Contact Us",
     buttonLink: "#",
@@ -145,7 +145,7 @@ const Gallery = (props) => {
         <Container>
           <Row className="items-center">
             <Col md={6} className="relative sm:mb-[30px]">
-              <img src="/assets/img/gallery/gallery.png" className="rounded-[5px] w-full" height="564" width="390" alt="what-we-offers" />
+              <img src="/assets/img/gallery/hero.webp" className="rounded-[5px] w-full" height="564" width="390" alt="what-we-offers" />
            {/* Modal Component Start */}
               {/* <CustomModal.Wrapper
                 className="absolute top-0 left-0 w-full h-full flex items-center justify-center"
