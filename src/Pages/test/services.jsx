@@ -83,7 +83,7 @@ const WhatWeOfferPage = (props) => {
                 <Container>
                     <Row className="items-center">
                         <Col md={6} className="relative sm:mb-[30px]">
-                            <img src="/assets/img/gallery/service2.png" className="rounded-[5px] w-full" height="564" width="390" alt="what-we-offers" />
+                            <img src="/assets/img/services/hero.webp" className="rounded-[5px] w-full" height="564" width="390" alt="what-we-offers" />
                         </Col>
                         <Col lg={{ span: 5, offset: 1 }} md={6} >
                             <h5 className="font-serif font-medium text-darkgray w-[90%]">A Symphony of Tradition and Craft</h5>
@@ -138,7 +138,7 @@ const WhatWeOfferPage = (props) => {
                         <m.div className="col-lg-5 col-xl-4 col-md-6 md:mb-[30px] sm:mb-[50px]" {...fadeIn}>
                             <span className="font-serif font-medium text-darkgray block mb-[25px] lg:w-[95%] sm:w-full sm:mb-[15px]">With over 15 years of experience, we provide the best service in the industry</span>
                             <p className="lg:w-[95%] sm:mb-[15px] mb-[20px]">We have worked in 40 of the 108 divyadesam. In the realm of divine craftsmanship, our commitment to excellence transcends the ordinary</p>
-                            <Buttons aria-label="link for about" href="#" className="font-serif uppercase btn-link after:h-[1px] leading-[28px] font-semibold md:text-md md:mb-[15px] after:bg-darkgray hover:text-darkgray" color="#232323" title="Explore resort" />
+                            <Buttons aria-label="link for about" href="/Gallery" className="font-serif uppercase btn-link after:h-[1px] leading-[28px] font-semibold md:text-md md:mb-[15px] after:bg-darkgray hover:text-darkgray" color="#232323" title="Explore Gsllery" />
                         </m.div>
                         <m.div className="col-lg-3 col-md-6 offset-xl-1" {...{ ...fadeIn, transition: { delay: 0.4 } }}>
                             <Lists theme="list-style-03" data={ListData09} animation={fadeIn} />

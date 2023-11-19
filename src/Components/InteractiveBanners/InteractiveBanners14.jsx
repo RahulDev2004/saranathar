@@ -22,7 +22,7 @@ const InteractiveBanners14 = (props) => {
                                 <img src={item.img} className="w-full" alt="packages" width={360} height={396} />
                                 <figcaption>
                                     <div className="hover-content align-items-center flex flex-column h-100 pb-[10px] text-center last-paragraph-no-margin">
-                                        <div className="font-serif text-md text-white opacity-60 uppercase mb-[10px]">{item.subtitle}</div>
+                                        <div className="font-serif text-md text-white opacity-60 uppercase mb-[10px]"></div>
                                         <h2 className="heading-6 font-serif font-medium text-white w-1/2">{item.title}</h2>
                                         {/* <div className="hover-show-content">
                                             <p className="hover-content-detail mb-[25px] mx-auto leading-[26px] lg:w-[80%] md:w-[60%] xs:w-[70%]">{item.content}</p>

@@ -77,20 +77,20 @@ const imageGalleryData03 = [
 const imageGalleryDataServices = [
     {
         double_col: true,
-        src: "/assets/img/gallery/service6.png",
+        src: "/assets/img/services/service1.webp",
         title: "Lightbox gallery image title",
     },
     {
         double_col: true,
-        src: "/images/works/img5-800x387.jpg",
+        src: "/assets/img/services/service2.webp",
         title: "Lightbox gallery image title",
     },
     {
-        src: "/images/works/img2-800x794.jpg",
+        src: "/assets/img/services/service3.webp",
         title: "Lightbox gallery image title",
     },
     {
-        src: "/images/works/img3-800x794.jpg",
+        src: "/assets/img/services/service4.webp",
         title: "Lightbox gallery image title",
     }
 ]

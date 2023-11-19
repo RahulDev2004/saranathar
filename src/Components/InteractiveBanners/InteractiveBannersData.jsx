@@ -386,7 +386,7 @@ const InteractiveBannersData13 = [
 
 const InteractiveBannersData14 = [
     {
-        img: "/assets/img/gallery/home1.png",
+        img: "/assets/img/services/statues.webp",
         title: "Statues",
         subtitle: "GET 50% OFF",
         content: "Lorem ipsum dolor amet adipiscing tempor",
@@ -394,7 +394,7 @@ const InteractiveBannersData14 = [
         btnLink: "#"
     },
     {
-        img: "/assets/img/gallery/home2.png",
+        img: "/assets/img/services/goldwork.webp",
         title: "Gold Works",
         subtitle: "GET 30% OFF",
         content: "Lorem ipsum dolor amet adipiscing tempor",
@@ -402,7 +402,7 @@ const InteractiveBannersData14 = [
         btnLink: "#"
     },
     {
-        img: "/assets/img/gallery/home4.png",
+        img: "/assets/img/services/brasswork.webp",
         title: "Brass Works",
         subtitle: "GET 50% OFF",
         content: "Lorem ipsum dolor amet adipiscing tempor",
