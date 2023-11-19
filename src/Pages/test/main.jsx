@@ -81,22 +81,22 @@ const iconData = [
 
 const swiperData = [
   {
-    bgimg: "/assets/img/webp/heroimg7.png",
+    bgimg: "/assets/img/home/Heroimg2.webp",
     img: "Saranathar Creations"
   },
   {
-    bgimg: "/assets/img/webp/Heroimg11.jpg",
-    img: "Mastery Over Work"
+    bgimg: "/assets/img/home/Heroimg3.webp",
+    img: "Divine Craftsmanship"
   },
   {
-    bgimg: "/assets/img/webp/Heroimg4.png",
-    img: "Divine Craftsmanship"
-  }
+    bgimg: "/assets/img/home/heroimg1.webp",
+    img: "Mastery Over Work"
+  },
 ]
 
 const infoData = [
   {
-    img: "/assets/img/gallery/img221.png",
+    img: "/assets/img/home/infobanner1.webp",
     title: "Tamil God Murugan",
     // content: "Lorem ipsum dolor amet consectetur adipiscing do eiusmod tempor",
     price: "FROM $100 PER NIGHT",
@@ -104,7 +104,7 @@ const infoData = [
     btnLink: "#"
   },
   {
-    img: "/assets/img/gallery/img15.png",
+    img: "/assets/img/home/infobanner2.webp",
     title: "Garuda Brass Statue",
     // content: "Lorem ipsum dolor amet consectetur adipiscing do eiusmod tempor",
     price: "FROM $150 PER NIGHT",
@@ -112,7 +112,7 @@ const infoData = [
     btnLink: "#"
   },
   {
-    img: "/assets/img/gallery/img5.png",
+    img: "/assets/img/home/infobanner3.webp",
     title: "Golden throne",
     // content: "Lorem ipsum dolor amet consectetur adipiscing do eiusmod tempor",
     price: "FROM $200 PER NIGHT",
@@ -292,7 +292,7 @@ const HotelResortPage = (props) => {
       <section className="py-0 overflow-hidden">
         <Container fluid>
           <Row>
-            <m.div className="col-xs-12 col-xl-6 col-lg-5 cover-background pl-40 h-[650px] flex flex-col justify-center xl:pl-[15px] lg:h-[550px] md:h-[350px] xs:h-[300px]" style={{ backgroundImage: `url(/assets/img/webp/homeslider7.jpg)` }} {...fadeIn}>
+            <m.div className="col-xs-12 col-xl-6 col-lg-5 cover-background pl-40 h-[650px] flex flex-col justify-center xl:pl-[15px] lg:h-[550px] md:h-[350px] xs:h-[300px]" style={{ backgroundImage: `url(/assets/img/home/slider.webp)` }} {...fadeIn}>
               <Row className="justify-center">
                 <Col xl={5} sm={9} className="xs:text-center">
                   <i className="line-icon-Slippers text-[50px] mb-[35px] inline-block xs:mb-[25px]"></i>
@@ -310,7 +310,7 @@ const HotelResortPage = (props) => {
                 ref={swiperRef1Fivereasons}
                 modules={[Autoplay, Keyboard]}
                 keyboard={{ enabled: true, onlyInViewport: true }} >
-                <SwiperSlide className="overflow-hidden cover-background relative" style={{ backgroundImage: `url(/assets/img/webp/homeslider1.png)` }}>
+                <SwiperSlide className="overflow-hidden cover-background relative" style={{ backgroundImage: `url(/assets/img/home/slider1.webp)` }}>
                   <div className="flex flex-col justify-end h-full" >
                     <div className="bg-white pl-24 pr-20 py-[4.5rem] w-[55%] lg:w-[75%] lg:py-[3.5rem] lg:px-16 md:w-[60%] sm:w-[75%] xs:w-[80%]">
                       <h3 className="heading-6 font-serif font-medium text-[#333045] mb-[15px]">Heritage Craftsmanship</h3>
@@ -318,7 +318,7 @@ const HotelResortPage = (props) => {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="overflow-hidden cover-background relative" style={{ backgroundImage: `url(/assets/img/webp/homeslider7.png)` }}>
+                <SwiperSlide className="overflow-hidden cover-background relative" style={{ backgroundImage: `url(/assets/img/home/slider2.webp)` }}>
                   <div className="flex flex-col justify-end h-full" >
                     <div className="bg-white px-24 py-[4.5rem] w-[55%] lg:w-[75%] lg:py-[3.5rem] lg:px-16 md:w-[60%] sm:w-[75%] xs:w-[80%]">
                       <h3 className="heading-6 font-serif font-medium text-[#333045] mb-[15px]">Global Temple Artisans</h3>
@@ -326,7 +326,7 @@ const HotelResortPage = (props) => {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="overflow-hidden cover-background relative" style={{ backgroundImage: `url(/assets/img/webp/homeslider.png)` }}>
+                <SwiperSlide className="overflow-hidden cover-background relative" style={{ backgroundImage: `url(/assets/img/home/slider3.webp)` }}>
                   <div className="flex flex-col justify-end h-full" >
                     <div className="bg-white px-24 py-[4.5rem] w-[55%] lg:w-[75%] lg:py-[3.5rem] lg:px-16 md:w-[60%] sm:w-[75%] xs:w-[80%]">
                       <h3 className="heading-6 font-serif font-medium text-[#333045] mb-[15px]">Crafting Elegance, Building Trust</h3>
