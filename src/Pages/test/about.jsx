@@ -70,17 +70,17 @@ const IconWithTextData_02 = [
 
 const serviceData = [
     {
-        img: "/assets/img/gallery/about3.png",
+        img: "/assets/img/about/about3.webp",
         title: "Timely Craftsmanship",
         content: "Excellent artistry delivered on time, echoing tales of devotion and punctuality."
     },
     {
-        img: "/assets/img/gallery/about5.png",
+        img: "/assets/img/about/about4.webp",
         title: "Experienced Artisans",
         content: "Encounter the best in craftsmanship, where experience meets divine inspiration."
     },
     {
-        img: "/assets/img/gallery/about7.png",
+        img: "/assets/img/about/about5.webp",
         title: "Skilled Masterpieces",
         content: "Explore a legacy of skilled works, each masterpiece a testament to our artisanship."
     }
@@ -169,7 +169,7 @@ const WhoWeArePage = (props) => {
                 <Container>
                     <Row className="font-serif">
                         <Col lg={4} className="pe-lg-0 flex md:mb-[30px]">
-                            <div className="w-full md:h-[700px] sm:h-[550px] xs:h-[450px] cover-background" style={{ backgroundImage: "url('/assets/img/gallery/about1.png') " }}></div>
+                            <div className="w-full md:h-[700px] sm:h-[550px] xs:h-[450px] cover-background" style={{ backgroundImage: "url('/assets/img/about/about1.webp') " }}></div>
                         </Col>
                         <Col lg={4} md={6} className="ps-lg-0 flex items-center sm:mb-[30px]">
                             <div className="justify-center h-full w-full flex flex-col items-start bg-[#C89965] px-[5.5rem] lg:px-[3rem] md:p-16">
@@ -179,7 +179,7 @@ const WhoWeArePage = (props) => {
                             </div>
                         </Col>
                         <Col lg={4} md={6} className="flex flex-col pr-0">
-                            <img src="/assets/img/gallery/about2.png" alt="about us" className="sm:w-full" />
+                            <img src="/assets/img/about/about2.webp" alt="about us" className="sm:w-full" />
                             <div className="bg-white px-[3.5rem] py-[3rem] h-full lg:p-8 sm:p-16">
                                 <span className="text-darkgray font-medium mb-[10px] block">About Past Works</span>
                                 <p className="font-sans">We have worked in 40 of the 108 divyadesam which inclued famous temples like tirupati. We have also left our mark on temples worldwide.</p>
@@ -203,7 +203,7 @@ const WhoWeArePage = (props) => {
                 <Container fluid>
                     <Row className="justify-center">
                         <Col>
-                            <img loading="lazy" className="mx-auto" src="/assets/img/gallery/about10.png" alt="who-we-are" width="1490" height="550" />
+                            <img loading="lazy" className="mx-auto" src="/assets/img/about/abouthero.webp" alt="who-we-are" width="1490" height="550" />
                         </Col>
                     </Row>
                 </Container>
