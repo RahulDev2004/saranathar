@@ -89,12 +89,23 @@ export const InputField = (value) => {
 }
 
 export const sendEmail = async (data) => {
-    const req = await fetch(`${process.env.REACT_APP_API_URL}/send`, {
-        method: 'post',
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data)
-    }).then(res => res.json()).then(data => data)
-    return await req
+
+    if (Email) {
+        Email.send({
+            SecureToken: "4e6f6f30-2ad8-4171-b294-c2416797d96c",
+            To: 'talktorahul.b@gmail.com',
+            From: "sabari2004@hotmail.com",
+            Subject: `Someone is interested!`,
+            Body: `
+            name: ${data.name},
+            email: ${data.email},
+            phone: ${data.phone},
+            comment: ${data.comment}
+        `
+        }).then(
+            message => alert(message)
+        );
+    }
 }
 
 export const resetForm = (actions, recaptcha) => {

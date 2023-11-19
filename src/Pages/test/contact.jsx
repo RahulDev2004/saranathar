@@ -45,12 +45,12 @@ const ContactUsModernPage = (props) => {
                 <HeaderNav theme="light" expand="lg" className="py-[0px] border-b !border-b-[#0000001a] lg:px-[15px] md:px-0" containerClass="sm:px-0">
                     <Col className="col-auto col-sm-6 col-lg-2 me-auto ps-lg-0">
                         <Link aria-label="header logo" className="flex items-center" to="/">
-                        <Navbar.Brand className="inline-block p-0 m-0 ">
-                {/* <img className="default-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-yellow-ochre.webp' data-rjs='/assets/img/webp/logo-yellow-ochre@2x.webp' alt='logo' />
+                            <Navbar.Brand className="inline-block p-0 m-0 ">
+                                {/* <img className="default-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-yellow-ochre.webp' data-rjs='/assets/img/webp/logo-yellow-ochre@2x.webp' alt='logo' />
                 <img className="alt-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-yellow-ochre.webp' data-rjs='/assets/img/webp/logo-yellow-ochre@2x.webp' alt='logo' />
                 <img className="mobile-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-yellow-ochre.webp' data-rjs='/assets/img/webp/logo-yellow-ochre@2x.webp' alt='logo' /> */}
-                <p className='h-full font-serif font-bold items-center'>Saranathar Creations</p>
-              </Navbar.Brand>
+                                <p className='h-full font-serif font-bold items-center'>Saranathar Creations</p>
+                            </Navbar.Brand>
                         </Link>
                     </Col>
                     <div className="col-auto hidden order-last md:block">
@@ -147,12 +147,12 @@ const ContactUsModernPage = (props) => {
                                         validationSchema={ContactFormStyle02Schema}
                                         onSubmit={async (values, actions) => {
                                             actions.setSubmitting(true)
-                                            if (values.recaptcha !== '') {
-                                                const response = await sendEmail(values)
-                                                response.status === "success" && resetForm(actions, recaptcha);
-                                            } else {
-                                                recaptcha.current.captcha.classList.add("error")
-                                            }
+                                            // if (values.recaptcha !== '') {
+                                            const response = await sendEmail(values)
+                                            // response.status === "success" && resetForm(actions, recaptcha);
+                                            // } else {
+                                            // recaptcha.current.captcha.classList.add("error")
+                                            // }
                                         }}
                                     >
                                         {({ isSubmitting, status, setFieldValue }) => (
@@ -165,15 +165,15 @@ const ContactUsModernPage = (props) => {
                                                     name="comment"
                                                     rows="6"
                                                     placeholder="How can we help you?"></TextArea>
-                                                {process.env.REACT_APP_GRECAPTCHA_API_KEY && (
+                                                {/* {process.env.REACT_APP_GRECAPTCHA_API_KEY && (
                                                     <ReCAPTCHA
                                                         ref={recaptcha}
                                                         className="mb-[35px]"
                                                         sitekey={process.env.REACT_APP_GRECAPTCHA_API_KEY}
                                                         onChange={(response) => { setFieldValue("recaptcha", response) }}
                                                     />
-                                                )}
-                                                <Buttons type="submit" className={`tracking-[0.5px] btn-fill rounded-none font-medium uppercase${isSubmitting ? " loading" : ""}`} themeColor="#C89965" size="md" color="#fff" title="Send Message" />
+                                                )} */}
+                                                <Buttons id="form-submit" type="submit" className={`tracking-[0.5px] btn-fill rounded-none font-medium uppercase${isSubmitting ? " loading" : ""}`} themeColor="#C89965" size="md" color="#fff" title="Send Message" />
                                                 <AnimatePresence>
                                                     {status && <div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}><MessageBox className="mt-[20px] py-[10px]" theme="message-box01" variant="success" message="Your message has been sent successfully!" /></div>}
                                                 </AnimatePresence>
