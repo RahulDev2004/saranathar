@@ -243,7 +243,7 @@ const HotelResortPage = (props) => {
                               transition={{ duration: 1, ease: "easeOut" }}
                               className="bg-white list-block absolute top-0 h-full w-full"></m.div>
                             {/* <img width="586px" height="276px" className="w-auto" src={item.img} alt="" /> */}
-                            <h1 className='text-[#fff]'>{item.img}</h1>
+                            <h1 className='text-[#fff] sm:text-xlg'>{item.img}</h1>
                           </div>
                           <m.div
                             initial={{ clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' }}
