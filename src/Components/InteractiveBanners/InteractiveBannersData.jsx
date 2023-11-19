@@ -403,7 +403,7 @@ const InteractiveBannersData14 = [
     },
     {
         img: "/assets/img/gallery/home4.png",
-        title: "Sheet Works",
+        title: "Brass Works",
         subtitle: "GET 50% OFF",
         content: "Lorem ipsum dolor amet adipiscing tempor",
         btnTitle: "Book Now",

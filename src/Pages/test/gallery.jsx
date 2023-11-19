@@ -119,11 +119,11 @@ const Gallery = (props) => {
                     <Navbar.Collapse className="col-auto px-0 justify-end">
                         <Menu {...props} />
                     </Navbar.Collapse>
-                    <Col className="col-auto text-right pe-0">
+                    {/* <Col className="col-auto text-right pe-0">
                         <SearchBar className="pr-0 xs:pl-[15px]" />
                         <HeaderLanguage className="xs:pl-[15px]" />
                         <HeaderCart className="xs:pl-[15px]" style={{ "--base-color": "#0038e3" }} />
-                    </Col>
+                    </Col> */}
                 </HeaderNav>
       </Header>
       {/* Header End */}
@@ -151,16 +151,16 @@ const Gallery = (props) => {
         <Container>
           <Row className="items-center">
             <Col md={6} className="relative sm:mb-[30px]">
-              <img src="https://via.placeholder.com/800x553" className="rounded-[5px] w-full" height="564" width="390" alt="what-we-offers" />
+              <img src="/assets/img/gallery/gallery.png" className="rounded-[5px] w-full" height="564" width="390" alt="what-we-offers" />
               {/* Modal Component Start */}
               <CustomModal.Wrapper
                 className="absolute top-0 left-0 w-full h-full flex items-center justify-center"
                 modalBtn={<Buttons type="submit" className="btn-sonar border-0" themeColor={["#b27cfd", "#ff9393"]} color="#fff" size="lg" title={<i className="icon-control-play" />} />} >
-                <div className="w-[1020px] max-w-full relative rounded mx-auto">
-                  <div className="fit-video">
+                {/* <div className="w-[1020px] max-w-full relative rounded mx-auto">
+                 <div className="fit-video">
                     <iframe width="100%" height="100%" className="shadow-[0_0_8px_rgba(0,0,0,0.06)]" controls src="https://www.youtube.com/embed/g0f_BRYJLJE?autoplay=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen ></iframe>
                   </div>
-                </div>
+                </div> */}
               </CustomModal.Wrapper>
               {/* Modal Component End */}
 

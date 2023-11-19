@@ -77,7 +77,7 @@ const imageGalleryData03 = [
 const imageGalleryDataServices = [
     {
         double_col: true,
-        src: "/images/works/img1-800x794.jpg",
+        src: "/assets/img/gallery/service6.png",
         title: "Lightbox gallery image title",
     },
     {
