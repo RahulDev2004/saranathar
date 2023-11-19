@@ -177,10 +177,11 @@ const HotelResortPage = (props) => {
         <HeaderNav theme="light" bg="light" menu="dark" className="py-[0px] md:px-[15px] sm:px-0">
           <Col xs="auto" className="me-auto ps-0">
             <Link aria-label="header logo link" className="flex items-center" to="/">
-              <Navbar.Brand className="inline-block p-0 m-0">
-                <img className="default-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-yellow-ochre.webp' data-rjs='/assets/img/webp/logo-yellow-ochre@2x.webp' alt='logo' />
+              <Navbar.Brand className="inline-block p-0 m-0 ">
+                {/* <img className="default-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-yellow-ochre.webp' data-rjs='/assets/img/webp/logo-yellow-ochre@2x.webp' alt='logo' />
                 <img className="alt-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-yellow-ochre.webp' data-rjs='/assets/img/webp/logo-yellow-ochre@2x.webp' alt='logo' />
-                <img className="mobile-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-yellow-ochre.webp' data-rjs='/assets/img/webp/logo-yellow-ochre@2x.webp' alt='logo' />
+                <img className="mobile-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-yellow-ochre.webp' data-rjs='/assets/img/webp/logo-yellow-ochre@2x.webp' alt='logo' /> */}
+                <p className='h-full font-serif font-bold items-center'>Saranathar Creations</p>
               </Navbar.Brand>
             </Link>
           </Col>

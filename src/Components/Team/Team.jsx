@@ -39,9 +39,9 @@ const TeamSwitch = (params, item, i) => {
 
 const Team = (props) => {
     const swiperRef = React.useRef(null)
-    const style = {
-        "--brand-color": typeof (props.overlay) === "object" ? `linear-gradient(to right top, ${props.overlay.map(item => item)})` : props.overlay,
-    }
+    // const style = {
+    //     "--brand-color": typeof (props.overlay) === "object" ? `linear-gradient(to right top, ${props.overlay.map(item => item)})` : props.overlay,
+    // }
 
     return (
         props.carousel === true ? (
@@ -55,7 +55,7 @@ const Team = (props) => {
                     {
                         props.data.map((item, i) => {
                             return (
-                                <SwiperSlide style={style} key={i} className={props.theme}>
+                                <SwiperSlide key={i} className={props.theme}>
                                     {TeamSwitch(props, item, i)}
                                 </SwiperSlide>
                             )
@@ -79,7 +79,7 @@ const Team = (props) => {
             <Row className={`${props.grid ? props.grid : ""}${props.className ? ` ${props.className}` : ""}`}>
                 {props.data.map((item, i) => {
                     return (
-                        <m.div style={style} key={i} className={`col ${props.theme} ${props.themeColor}`} {...{ ...props.animation, transition: { delay: i * props.animationDelay } }} >
+                        <m.div  key={i} className={`col ${props.theme} ${props.themeColor}`} {...{ ...props.animation, transition: { delay: i * props.animationDelay } }} >
                             {TeamSwitch(props, item, i)}
                         </m.div>
                     )
@@ -92,7 +92,7 @@ const Team = (props) => {
 Team.defaultProps = {
     theme: "team-style-01",
     data: TeamData01,
-    overlay: ["#556fffcc", "#b263e4cc", "#e05fc4cc", "#f767a6cc", "#ff798ecc"],
+    overlay: [],
     animationDelay: 0.5,
     carouselOption: {
         slidesPerView: 1,

@@ -1,20 +1,20 @@
 const serviceData1 = [
     {
-        img: "https://via.placeholder.com/800x618",
+        img: "/assets/img/gallery/gallery2.png",
         icon: "fas fa-arrow-right",
         title: "SHEET WORKS",
         content: "With our expertise, elevate your temple with the perfect sheet works ",
         link: "/page/our-story"
     },
     {
-        img: "https://via.placeholder.com/800x618",
+        img: "/assets/img/gallery/gallery1.png",
         icon: "fas fa-arrow-right",
         title: "TEMPLE TRANSFORMATION",
         content: "Experience the magic of temple transformation with our services. ",
         link: "/page/our-story"
     },
     {
-        img: "https://via.placeholder.com/800x618",
+        img: "/assets/img/gallery/gallery4.png",
         icon: "fas fa-arrow-right",
         title: "ACCESSORIES MAKING",
         content: "We make accessories including simhasanam, vaaganam and radham",

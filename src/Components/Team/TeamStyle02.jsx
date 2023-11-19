@@ -5,11 +5,11 @@ const TeamStyle02 = ({ item }) => {
         <figure>
             <div className='team-member-image'><img width="367" height="452" loading="lazy" src={item.img} alt='images' /></div>
             <figcaption>
-                <div className="team-member-details">
+                {/* <div className="team-member-details">
                     <span className='title'>{item.name}</span>
                     <span className='sub-title'>{item.designation}</span>
-                </div>
-                {
+                </div> */}
+                {/* {
                     item.social_links && (
                         <div className="social-icon">
                             {
@@ -21,7 +21,7 @@ const TeamStyle02 = ({ item }) => {
                             }
                         </div>
                     )
-                }
+                } */}
             </figcaption>
         </figure>
     )
