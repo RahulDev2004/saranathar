@@ -112,33 +112,6 @@ const Gallery = (props) => {
           <Navbar.Collapse className="col-auto px-0 justify-end">
             <Menu {...props} />
           </Navbar.Collapse>
-          <Col className="col-auto text-right pe-0">
-            <SearchBar className="pr-0 xs:pl-[15px]" />
-            <HeaderLanguage className="xs:pl-[15px]" />
-            <HeaderCart className="xs:pl-[15px]" style={{ "--base-color": "#0038e3" }} />
-          </Col>
-        </HeaderNav>
-        <HeaderNav theme="light" expand="lg" className="py-[0px] border-b !border-b-[#0000001a] lg:px-[15px] md:px-0" containerClass="sm:px-0">
-          <Col className="col-auto col-sm-6 col-lg-2 me-auto ps-lg-0">
-            <Link aria-label="header logo" className="flex items-center" to="/">
-              <Navbar.Brand className="inline-block p-0 m-0">
-                <img className="default-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-black.webp' data-rjs='/assets/img/webp/logo-black@2x.webp' alt='logo' />
-                <img className="alt-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-fast-blue-black.webp' data-rjs='/assets/img/webp/logo-fast-blue-black@2x.webp' alt='logo' />
-                <img className="mobile-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-fast-blue-black.webp' data-rjs='/assets/img/webp/logo-fast-blue-black@2x.webp' alt='logo' />
-              </Navbar.Brand>
-            </Link>
-          </Col>
-          <div className="col-auto hidden order-last md:block">
-            <Navbar.Toggle className="md:ml-[10px] sm:ml-0">
-              <span className="navbar-toggler-line"></span>
-              <span className="navbar-toggler-line"></span>
-              <span className="navbar-toggler-line"></span>
-              <span className="navbar-toggler-line"></span>
-            </Navbar.Toggle>
-          </div>
-          <Navbar.Collapse className="col-auto px-0 justify-end">
-            <Menu {...props} />
-          </Navbar.Collapse>
           {/* <Col className="col-auto text-right pe-0">
                         <SearchBar className="pr-0 xs:pl-[15px]" />
                         <HeaderLanguage className="xs:pl-[15px]" />
