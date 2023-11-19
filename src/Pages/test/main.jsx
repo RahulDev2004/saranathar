@@ -98,7 +98,7 @@ const infoData = [
   {
     img: "/assets/img/gallery/img221.png",
     title: "Tamil God Murugan",
-    content: "Lorem ipsum dolor amet consectetur adipiscing do eiusmod tempor",
+    // content: "Lorem ipsum dolor amet consectetur adipiscing do eiusmod tempor",
     price: "FROM $100 PER NIGHT",
     btnName: "Booking Now ",
     btnLink: "#"
@@ -106,7 +106,7 @@ const infoData = [
   {
     img: "/assets/img/gallery/img15.png",
     title: "Garuda Brass Statue",
-    content: "Lorem ipsum dolor amet consectetur adipiscing do eiusmod tempor",
+    // content: "Lorem ipsum dolor amet consectetur adipiscing do eiusmod tempor",
     price: "FROM $150 PER NIGHT",
     btnName: "Booking Now ",
     btnLink: "#"
@@ -114,7 +114,7 @@ const infoData = [
   {
     img: "/assets/img/gallery/img5.png",
     title: "Golden throne",
-    content: "Lorem ipsum dolor amet consectetur adipiscing do eiusmod tempor",
+    // content: "Lorem ipsum dolor amet consectetur adipiscing do eiusmod tempor",
     price: "FROM $200 PER NIGHT",
     btnName: "Booking Now ",
     btnLink: "#"
@@ -488,7 +488,7 @@ const HotelResortPage = (props) => {
               <FooterMenu data={FooterData.slice(0, 1)} xs={12} lg={{ order: 0, span: 2 }} sm={{ order: 2, span: 5, offset: 1 }} className=" md:mb-[40px] xs:mb-[25px]" titleClass="uppercase text-md" />
               <Col lg={{ span: 3, order: 0, offset: 0 }} sm={{ span: 5, offset: 1, order: 4 }} className="xs:mb-[25px]">
                 <span className="mb-[20px] font-serif text-md block uppercase font-medium tracking-[1px] text-white xs:mb-[10px]">Get in touch</span>
-                <p className="w-[84%] mb-[15px]">No 5, Thandhai Periyal Nagar, Aariyapadaiveedu, <br/>Kumbakonam - 612703</p>
+                <p className="w-[84%] mb-[15px]">No 5, Thandhai Periyal Nagar, Aariyapadaiveedu, <br />Kumbakonam - 612703</p>
                 <div>+1 234 567 8910</div>
                 <div><a aria-label="link for gmail" className="hover:!text-[#c89965]" href="mailto:info@yourdomain.com">info@yourdomain.com</a></div>
               </Col>

@@ -235,8 +235,8 @@ const Gallery = (props) => {
         <Container className='mt-[60px]'>
           <Row className="justify-center">
             <Col md={6} className="text-center mb-10">
-              <span className="font-serif mb-[5px] inline-block uppercase font-medium text-spanishgray">Meet our team</span>
-              <h5 className="font-serif text-darkgray font-medium">Creative People</h5>
+              <span className="font-serif mb-[5px] inline-block uppercase font-medium text-spanishgray">Our Works</span>
+              <h5 className="font-serif text-darkgray font-medium">Explore Our Works</h5>
             </Col>
           </Row>
           <Row>
@@ -245,7 +245,7 @@ const Gallery = (props) => {
                 themeColor="dark"
                 theme='team-style-02'
                 className="text-white sm:justify-center"
-                overlay={["#353535", "#D7D7D7"]}
+                overlay={["#35353500", "#D7D7D700"]}
                 data={TeamData02}
                 grid="row-cols-1 row-cols-sm-2 row-cols-md-3 gap-y-10"
                 animation={fadeIn}
