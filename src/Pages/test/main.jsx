@@ -97,7 +97,7 @@ const swiperData = [
 const infoData = [
   {
     img: "/assets/img/gallery/img221.png",
-    title: "Classic double toom",
+    title: "Tamil God Murugan",
     content: "Lorem ipsum dolor amet consectetur adipiscing do eiusmod tempor",
     price: "FROM $100 PER NIGHT",
     btnName: "Booking Now ",
@@ -105,7 +105,7 @@ const infoData = [
   },
   {
     img: "/assets/img/gallery/img15.png",
-    title: "One bedroom suite",
+    title: "Garuda Brass Statue",
     content: "Lorem ipsum dolor amet consectetur adipiscing do eiusmod tempor",
     price: "FROM $150 PER NIGHT",
     btnName: "Booking Now ",
@@ -113,7 +113,7 @@ const infoData = [
   },
   {
     img: "/assets/img/gallery/img5.png",
-    title: "Empire state suite",
+    title: "Golden throne",
     content: "Lorem ipsum dolor amet consectetur adipiscing do eiusmod tempor",
     price: "FROM $200 PER NIGHT",
     btnName: "Booking Now ",
@@ -193,10 +193,10 @@ const HotelResortPage = (props) => {
           <Navbar.Collapse xs="auto" className="menu-order px-lg-0 justify-center mr-[42px]">
             <Menu {...props} />
           </Navbar.Collapse>
-          <Col xs="auto" className="text-end pe-0 font-size-0">
+          {/* <Col xs="auto" className="text-end pe-0 font-size-0">
             <SearchBar />
             <HeaderLanguage />
-          </Col>
+          </Col> */}
         </HeaderNav>
       </Header>
       {/* Header End */}
@@ -276,7 +276,7 @@ const HotelResortPage = (props) => {
             <m.div className="col-lg-5 col-xl-4 col-md-6 md:mb-[30px] sm:mb-[50px]" {...fadeIn}>
               <span className="font-serif font-medium text-darkgray block mb-[25px] lg:w-[95%] sm:w-full sm:mb-[15px]">With over 15 years of experience. We provide the best services for all temples.</span>
               <p className="lg:w-[95%] sm:mb-[15px] mb-[20px]">Nestled in the heart of South India, our skilled artisans blend tradition to the spiritual realm. We take pride in transforming sacred spaces into timeless masterpieces</p>
-              <Buttons aria-label="link for about" href="#" className="font-serif uppercase btn-link after:h-[1px] leading-[28px] font-semibold md:text-md md:mb-[15px] after:bg-darkgray hover:text-darkgray" color="#232323" title="Explore resort" />
+              <Buttons aria-label="link for about" href="/gallery" className="font-serif uppercase btn-link after:h-[1px] leading-[28px] font-semibold md:text-md md:mb-[15px] after:bg-darkgray hover:text-darkgray" color="#232323" title="Explore Works" />
             </m.div>
             <m.div className="col-lg-3 col-md-6 offset-xl-1" {...{ ...fadeIn, transition: { delay: 0.4 } }}>
               <Lists theme="list-style-03" data={ListData03} animation={fadeIn} />
@@ -419,8 +419,8 @@ const HotelResortPage = (props) => {
                 </div>
               </CustomModal.Wrapper>
               {/* Modal Component End */}
-              <m.h2 {...{ ...fadeIn, transition: { delay: 0.6 } }} className="heading-6 font-serif font-medium text-white uppercase -tracking-[1px] mb-0">Relax and enjoy your</m.h2>
-              <m.img {...{ ...fadeIn, transition: { delay: 0.8 } }} width="555px" height="225px" src="/assets/img/webp/hotel-resort-img-20.webp" alt="" />
+              <m.h2 {...{ ...fadeIn, transition: { delay: 0.6 } }} className="heading-6 font-serif font-medium text-white uppercase -tracking-[1px] mb-0">Our Amazing Journey</m.h2>
+              {/* <m.img {...{ ...fadeIn, transition: { delay: 0.8 } }} width="555px" height="225px" src="/assets/img/webp/hotel-resort-img-20.webp" alt="" /> */}
             </Col>
           </Row>
         </Container>
@@ -482,12 +482,12 @@ const HotelResortPage = (props) => {
             <Row>
               <Col xs={12} lg={{ order: 0, span: 3 }} sm={{ order: 1, span: 6 }} className="md:mb-[40px] xs:mb-[25px]">
                 <span className="font-serif font-medium block text-white mb-[20px] mt-[5px] text-md uppercase tracking-[1px] xs:mb-[10px]">About company</span>
-                <p>Lorem ipsum dolor amet consectetur adipiscing do tempor incididunt labore magna ut enim minim exercitation laboris nisiex ea commodo.</p>
+                <p>Exquisite divine metal craftsmanship, specializing in adorning temple walls and statues of gods. Masters in gold work, with a rich portfolio.</p>
               </Col>
               <FooterMenu data={FooterData.slice(0, 1)} xs={12} lg={{ order: 0, span: 2 }} sm={{ order: 2, span: 5, offset: 1 }} className=" md:mb-[40px] xs:mb-[25px]" titleClass="uppercase text-md" />
               <Col lg={{ span: 3, order: 0, offset: 0 }} sm={{ span: 5, offset: 1, order: 4 }} className="xs:mb-[25px]">
                 <span className="mb-[20px] font-serif text-md block uppercase font-medium tracking-[1px] text-white xs:mb-[10px]">Get in touch</span>
-                <p className="w-[84%] mb-[15px]">27 Eden walk eden centre, Orchard view, Paris, France</p>
+                <p className="w-[84%] mb-[15px]">No 5, Thandhai Periyal Nagar, Aariyapadaiveedu, <br/>Kumbakonam - 612703</p>
                 <div>+1 234 567 8910</div>
                 <div><a aria-label="link for gmail" className="hover:!text-[#c89965]" href="mailto:info@yourdomain.com">info@yourdomain.com</a></div>
               </Col>
@@ -540,7 +540,7 @@ const HotelResortPage = (props) => {
                 </Link>
               </Col>
               <Col md={6} className="flex justify-center items-center text-center sm:mb-[20px]">
-                <p className="mb-0">&copy; {new Date().getFullYear()} Litho is Proudly Powered by <a aria-label="footer link themezaa" rel="noreferrer" href="https://www.themezaa.com/" className="text-decoration-line-bottom hover:!text-[#c89965]" target="_blank"> ThemeZaa</a></p>
+                <p className="mb-0">&copy; {new Date().getFullYear()}Proudly Powered by <a aria-label="footer link themezaa" rel="noreferrer" href="https://www.themezaa.com/" className="text-decoration-line-bottom hover:!text-[#c89965]" target="_blank"> Rook Fellows</a></p>
               </Col>
               <Col md={3} className="text-right xs:text-center">
                 <SocialIcons size="xs" theme="social-icon-style-12" className="justify-end sm:justify-center" iconColor="light" data={iconData} />

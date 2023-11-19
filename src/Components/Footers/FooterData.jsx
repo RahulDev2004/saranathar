@@ -3,40 +3,44 @@ const FooterData = [
         title: "company",
         submenu: [
             {
-                title: "About company",
-                link: "/page/about-us"
+                title: "Home",
+                link: "/main"
             },
             {
-                title: "Company services",
-                link: "/page/our-services"
+                title: "services",
+                link: "/services"
             },
             {
-                title: "Job opportunities",
-                link: "/page/our-team"
+                title: "Gallery",
+                link: "/gallery"
+            },
+            {
+                title: "About us",
+                link: "/about"
             },
             {
                 title: "Contact us",
-                link: "/page/contact-classic"
+                link: "/contact"
             },
         ]
     },
     {
-        title: "customer",
+        title: "Works",
         submenu: [
             {
-                title: "Client support",
+                title: "Gold Plating",
                 link: "/page/faq-s"
             },
             {
-                title: "Pricing packages",
+                title: "Sheet Works",
                 link: "/page/pricing-packages"
             },
             {
-                title: "Company history",
+                title: "Statue Works",
                 link: "/page/our-story"
             },
             {
-                title: "Our process",
+                title: "Brass Works",
                 link: "/page/our-process"
             },
         ]

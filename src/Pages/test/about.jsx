@@ -135,11 +135,11 @@ const WhoWeArePage = (props) => {
                     <Navbar.Collapse className="col-auto px-0 justify-end">
                         <Menu {...props} />
                     </Navbar.Collapse>
-                    <Col className="col-auto text-right pe-0">
+                    {/* <Col className="col-auto text-right pe-0">
                         <SearchBar className="pr-0 xs:pl-[15px]" />
                         <HeaderLanguage className="xs:pl-[15px]" />
                         <HeaderCart className="xs:pl-[15px]" style={{ "--base-color": "#0038e3" }} />
-                    </Col>
+                    </Col> */}
                 </HeaderNav>
             </Header>
             {/* Header End */}

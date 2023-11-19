@@ -50,11 +50,11 @@ const WhatWeOfferPage = (props) => {
                     <Navbar.Collapse className="col-auto px-0 justify-end">
                         <Menu {...props} />
                     </Navbar.Collapse>
-                    <Col className="col-auto text-right pe-0">
+                    {/* <Col className="col-auto text-right pe-0">
                         <SearchBar className="pr-0 xs:pl-[15px]" />
                         <HeaderLanguage className="xs:pl-[15px]" />
                         <HeaderCart className="xs:pl-[15px]" style={{ "--base-color": "#0038e3" }} />
-                    </Col>
+                    </Col> */}
                 </HeaderNav>
             </Header>
             {/* Header End */}
@@ -82,7 +82,7 @@ const WhatWeOfferPage = (props) => {
                 <Container>
                     <Row className="items-center">
                         <Col md={6} className="relative sm:mb-[30px]">
-                            <img src="/images/works/img221.png" className="rounded-[5px] w-full" height="564" width="390" alt="what-we-offers" />
+                            <img src="/assets/img/gallery/service2.png" className="rounded-[5px] w-full" height="564" width="390" alt="what-we-offers" />
                         </Col>
                         <Col lg={{ span: 5, offset: 1 }} md={6} >
                             <h5 className="font-serif font-medium text-darkgray w-[90%]">A Symphony of Tradition and Craft</h5>

@@ -19,6 +19,7 @@ import SideButtons from "../../Components/SideButtons";
 // Data
 import { CounterData01 } from '../../Components/Counters/CounterData';
 import { TeamData02, TeamData01 } from '../../Components/Team/TeamData';
+import CustomModal from '../../Components/CustomModal';
 
 
 const TabData = [
@@ -117,6 +118,33 @@ const Gallery = (props) => {
             <HeaderCart className="xs:pl-[15px]" style={{ "--base-color": "#0038e3" }} />
           </Col>
         </HeaderNav>
+        <HeaderNav theme="light" expand="lg" className="py-[0px] border-b !border-b-[#0000001a] lg:px-[15px] md:px-0" containerClass="sm:px-0">
+          <Col className="col-auto col-sm-6 col-lg-2 me-auto ps-lg-0">
+            <Link aria-label="header logo" className="flex items-center" to="/">
+              <Navbar.Brand className="inline-block p-0 m-0">
+                <img className="default-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-black.webp' data-rjs='/assets/img/webp/logo-black@2x.webp' alt='logo' />
+                <img className="alt-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-fast-blue-black.webp' data-rjs='/assets/img/webp/logo-fast-blue-black@2x.webp' alt='logo' />
+                <img className="mobile-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-fast-blue-black.webp' data-rjs='/assets/img/webp/logo-fast-blue-black@2x.webp' alt='logo' />
+              </Navbar.Brand>
+            </Link>
+          </Col>
+          <div className="col-auto hidden order-last md:block">
+            <Navbar.Toggle className="md:ml-[10px] sm:ml-0">
+              <span className="navbar-toggler-line"></span>
+              <span className="navbar-toggler-line"></span>
+              <span className="navbar-toggler-line"></span>
+              <span className="navbar-toggler-line"></span>
+            </Navbar.Toggle>
+          </div>
+          <Navbar.Collapse className="col-auto px-0 justify-end">
+            <Menu {...props} />
+          </Navbar.Collapse>
+          {/* <Col className="col-auto text-right pe-0">
+                        <SearchBar className="pr-0 xs:pl-[15px]" />
+                        <HeaderLanguage className="xs:pl-[15px]" />
+                        <HeaderCart className="xs:pl-[15px]" style={{ "--base-color": "#0038e3" }} />
+                    </Col> */}
+        </HeaderNav>
       </Header>
       {/* Header End */}
       <SideButtons />
@@ -143,7 +171,19 @@ const Gallery = (props) => {
         <Container>
           <Row className="items-center">
             <Col md={6} className="relative sm:mb-[30px]">
-              <img src="https://via.placeholder.com/800x553" className="rounded-[5px] w-full" height="564" width="390" alt="what-we-offers" />
+              <img src="/assets/img/gallery/gallery.png" className="rounded-[5px] w-full" height="564" width="390" alt="what-we-offers" />
+              {/* Modal Component Start */}
+              <CustomModal.Wrapper
+                className="absolute top-0 left-0 w-full h-full flex items-center justify-center"
+                modalBtn={<Buttons type="submit" className="btn-sonar border-0" themeColor={["#b27cfd", "#ff9393"]} color="#fff" size="lg" title={<i className="icon-control-play" />} />} >
+                {/* <div className="w-[1020px] max-w-full relative rounded mx-auto">
+                 <div className="fit-video">
+                    <iframe width="100%" height="100%" className="shadow-[0_0_8px_rgba(0,0,0,0.06)]" controls src="https://www.youtube.com/embed/g0f_BRYJLJE?autoplay=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen ></iframe>
+                  </div>
+                </div> */}
+              </CustomModal.Wrapper>
+              {/* Modal Component End */}
+
             </Col>
             <Col lg={{ span: 5, offset: 1 }} md={6} >
               <h5 className="font-serif font-medium text-darkgray w-[90%]">Journey Through Divine Artistry</h5>
